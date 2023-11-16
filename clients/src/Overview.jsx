@@ -45,7 +45,7 @@ const Overview = () => {
     <div className="bg-[#DDF2FD] pt-10">
       <div className='flex flex-col justify-center items-center '>
         <h1 className='text-[40px] font-semibold'>GAME MODES</h1>
-        <h2 className="text-[18px] w-5/6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Travel the world and fight for the future in diverse locations around the globe. From the technological marvels of Busan to the snow-dusted streets of Toronto, every map has objectives to accomplish, secrets to uncover, and strategies to explore.</h2>
+        <h2 className="text-[18px] w-2/3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Travel the world and fight for the future in diverse locations around the globe. From the technological marvels of Busan to the snow-dusted streets of Toronto, every map has objectives to accomplish, secrets to uncover, and strategies to explore.</h2>
       </div>
 
       <div className='flex flex-row justify-center gap-10'>
