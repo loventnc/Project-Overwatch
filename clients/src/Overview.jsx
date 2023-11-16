@@ -49,40 +49,58 @@ const Overview = () => {
       </div>
 
       <div className='flex flex-row justify-center gap-10'>
-        <div className=''>
-          <img src={CaptureFlag} className="bg-neutral-300 rounded-full" alt="" />
-          <span>CaptureFlag</span>
+        <div className='flex flex-col justify-center' width="50px">
+          <div className='flex justify-center'>
+            <img src={CaptureFlag} className="bg-neutral-300 rounded-full" alt="" />
+          </div>
+          <span className=''>CaptureFlag</span>
         </div>
-        <div>
-          <img src={Control} className="bg-neutral-300 rounded-full" alt=""  />
+        <div className='flex flex-col justify-center' width="50px">
+          <div className='flex justify-center'>
+            <img src={Control} className="bg-neutral-300 rounded-full" alt=""  />
+          </div>
           <span>Control</span>
         </div>
-        <div>
-          <img src={Deathmatch} className="bg-neutral-300 rounded-full" alt="" />
+        <div className='flex flex-col justify-center' width="50px">
+          <div className='flex justify-center'>
+            <img src={Deathmatch} className="bg-neutral-300 rounded-full" alt="" />
+          </div>
           <span>Deathmatch</span>
         </div>
-        <div>
-          <img src={Elimination} className="bg-neutral-300 rounded-full" alt="" />
+        <div className='flex flex-col justify-center' width="50px">
+          <div className='flex justify-center'>
+            <img src={Elimination} className="bg-neutral-300 rounded-full" alt="" />
+          </div>
           <span>Elimination</span>
         </div>
-        <div>
-          <img src={Escort} className="bg-neutral-300 rounded-full" alt="" />
+        <div className='flex flex-col justify-center' width="50px">
+          <div className='flex justify-center'>
+            <img src={Escort} className="bg-neutral-300 rounded-full" alt="" />
+          </div>
           <span>Escort</span>
         </div>
-        <div>
-          <img src={Flashpoint} className="bg-neutral-300 rounded-full" alt="" />
+        <div className='flex flex-col justify-center' width="50px">
+          <div className='flex justify-center'>
+            <img src={Flashpoint} className="bg-neutral-300 rounded-full" alt="" />
+          </div>
           <span>Flashpoint</span>
         </div>
-        <div>
-          <img src={Hybrid} className="bg-neutral-300 rounded-full" alt="" />
+        <div className='flex flex-col justify-center' width="50px">
+          <div className='flex justify-center'>
+            <img src={Hybrid} className="bg-neutral-300 rounded-full" alt="" />
+          </div>
           <span>Hybridg</span>
         </div>
-        <div>
-          <img src={Push} className="bg-neutral-300 rounded-full" alt="" />
+        <div className='flex flex-col justify-center' width="50px">
+          <div className='flex justify-center'>
+            <img src={Push} className="bg-neutral-300 rounded-full" alt="" />
+          </div>  
           <span>Push</span>
         </div>
-        <div>
-          <img src={TeamDeathMatch} className="bg-neutral-300 rounded-full" alt="" />
+        <div className='flex flex-col justify-center' width="50px">
+          <div className='flex justify-center'>
+            <img src={TeamDeathMatch} className="bg-neutral-300 rounded-full" alt="" />
+          </div>
           <span>TeamDeathMatch</span>
         </div>
       </div>
