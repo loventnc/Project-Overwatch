@@ -12,7 +12,9 @@ import Push from "../src/image/Push.png";
 import TeamDeathMatch from "../src/image/TeamDeathMatch.png";
 import HeoresMenu from "../src/image/HeoresMenu.jpg";
 import MapMenu from "../src/image/MapMenu.jpg";
-
+import CaptureFlagPIC from "../src/image/CaptureFlagPIC.jpg";
+import { SlArrowLeft } from "react-icons/sl";
+// import { Carousel } from 'react-responsive-carousel';
 
 const Overview = () => {
 
@@ -35,11 +37,13 @@ const Overview = () => {
       </div>
     </div>
 
+
     {/* Heroes/Map */}
     <div className='bg-[#DDF2FD] grid grid-cols-2'>
       <img src={HeoresMenu} className="" alt=""  />
       <img src={MapMenu} className="" alt=""  />
     </div>
+
 
     {/* GAME MODES */}
     <div className="bg-[#DDF2FD] pt-10">
@@ -48,6 +52,7 @@ const Overview = () => {
         <h2 className="text-[18px] w-2/3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Travel the world and fight for the future in diverse locations around the globe. From the technological marvels of Busan to the snow-dusted streets of Toronto, every map has objectives to accomplish, secrets to uncover, and strategies to explore.</h2>
       </div>
 
+      {/* icons */}
       <div className='flex flex-row justify-center gap-10'>
         <div className='flex flex-col justify-center' width="50px">
           <div className='flex justify-center'>
@@ -104,7 +109,13 @@ const Overview = () => {
           <span>TeamDeathMatch</span>
         </div>
       </div>
+    {/* pictures */}
+    {/* <div className='flex justify-center mt-10' >
+      <img src={CaptureFlagPIC} className="" alt="" width="800px" />
     </div>
+    <SlArrowLeft /> */}
+    </div>
+
     </>
   )
 }
