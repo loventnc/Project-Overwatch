@@ -7,6 +7,8 @@ import Overview from './Overview'
 import Heroes from './Heroes'
 
 import {Routes, Route} from 'react-router-dom'
+import Followus from './Components/Followus'
+// import DropdownMenu from "./DropdownMenu";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +20,7 @@ function App() {
       <Route path="/" element={<Overview />} />
       <Route path="/" element={<Heroes />} />
     </Routes>
+    <Followus />
     </>
   )
 }

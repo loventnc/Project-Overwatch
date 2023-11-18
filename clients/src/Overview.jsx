@@ -24,6 +24,7 @@ import TeamDeathMatchPIC from "../src/image/TeamDeathMatchPIC.jpg";
 import { SlArrowLeft } from "react-icons/sl";
 
 
+
 const Overview = () => {
 
   
@@ -200,16 +201,6 @@ const Overview = () => {
       </div>
     </div>
 
-    {/* <script>
-      function showSlide(slideId) {
-        // Hide all slides
-        const slides = document.querySelectorAll('.carousel-item');
-        slides.forEach(slide => slide.classList.add('hidden'));
-        
-        // Show the selected slide
-        document.getElementById(slideId).classList.remove('hidden');
-      }
-    </script> */}
     </>
   )
 }
