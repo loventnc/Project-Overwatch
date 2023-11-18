@@ -3,7 +3,7 @@ import { RiFacebookCircleFill } from "react-icons/ri";
 import { RiInstagramFill } from "react-icons/ri";
 import { RiYoutubeFill } from "react-icons/ri";
 import { NavLink, Link } from "react-router-dom";
-import blizzard from "../image/blizzard.png";
+// import blizzard from "../image/blizzard.png";
 
 function Followus() {
     return (
@@ -22,9 +22,9 @@ function Followus() {
                             <RiYoutubeFill />
                         </Link>
                     </div>
-                    <Link to='https://www.blizzard.com/en-us/'>
+                    {/* <Link to='https://www.blizzard.com/en-us/'>
                         <img src={blizzard} className="" alt="" width="80px" />
-                    </Link>
+                    </Link> */}
                 </div>
             </footer>
         </>
