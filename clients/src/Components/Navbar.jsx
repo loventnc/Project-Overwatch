@@ -3,6 +3,7 @@ import Logo from "../image/Logo.png";
 import {BiUser} from 'react-icons/bi';
 import {AiOutlineSearch} from 'react-icons/ai';
 import {AiOutlineDown} from 'react-icons/ai';
+import { MapsDropdown } from "./MapsDropdown";
 
 import { NavLink } from "react-router-dom";
 // import { navitems } from "./Navitems";
@@ -50,6 +51,13 @@ function Navbar(){
                                 <li><a>Hybrid</a></li>
                                 <li><a>Push</a></li>
                                 <li><a>TeamDeathMatch</a></li>
+                                {/* {MapsDropdown .map((MapDropdown, index) => {
+                                    return(
+                                        <>
+                                        <li >{MapDropdown.title}</li>
+                                        </>
+                                    )
+                                })} */}
                             </ul>
                         </div>
                         <div className="dropdown dropdown-hover">
