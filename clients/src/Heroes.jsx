@@ -14,7 +14,7 @@ const Heroes = () => {
     {/* roles */}
     <div>
       <div>
-        
+        <h2 className='flex justify-center text-center text-[18px]'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Overwatch features an international cast of powerful heroes with captivating personalities and backstories. Explore the full roster below.</h2>
       </div>
     </div>
     </>
