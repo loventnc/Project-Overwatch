@@ -3,19 +3,23 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 
-function Signup(){
+function Signup() {
     const [name, setName] = useState()
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
-    const handleSubmit = (e) =>{
+    const navigate = useNavigate()
+
+    const handleSubmit = (e) => {
         e.preventDefault()
         axios.post('http://localhost:3001/register', {name, email, password})
-        .then (result => console.log(result))
-        .catch(err=> console.log(err))
+            .then(result => {console.log(result)
+            navigate('/login')
+            })
+            .catch(err=> console.log(err))
     }
-
     return(
         <div className='flex  justify-content-center w-full h-screen'>
             <div className='bg-white w-[40%]'>
