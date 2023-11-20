@@ -5,12 +5,20 @@ const Heroes = () => {
 
 
   return (
-    <><div className=''>
-      <div className="bg-cover bg-HeaderHeroesPage">
-        <h1>HEROES</h1>
+    <>
+    {/* Hearder */}
+    <div className="bg-cover bg-center bg-HeaderHeroesPage h-[518px]">
+      <h1 className='text-black text-[50px] font-bold ml-36 mt-36'>HEROES</h1>
+    </div>
+
+    {/* roles */}
+    <div>
+      <div>
+        
       </div>
-      </div>
+    </div>
     </>
+    
   )
 }
 
