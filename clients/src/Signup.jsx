@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
+
 
 function Signup(){
     const [name, setName] = useState()
@@ -9,7 +11,7 @@ function Signup(){
     const [password, setPassword] = useState()
     const handleSubmit = (e) =>{
         e.preventDefault()
-        axios.post('', {name, email, password})
+        axios.post('http://localhost:3001/register', {name, email, password})
         .then (result => console.log(result))
         .catch(err=> console.log(err))
     }
@@ -45,19 +47,7 @@ function Signup(){
                         onChange={(e) => setName(e.target.value)}
                     />
                 </div>
-                <div className="">
-                    <label htmlFor='email'>
-                        <strong>Email</strong>
-                    </label>
-                    <input
-                        type='email'
-                        placeholder='Enter Email'
-                        autoComplete='off'
-                        name='email'
-                        className='form-control rounded-0'
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
-                </div>
+
                 <div className="">
                     <label htmlFor='email'>
                         <strong>Password</strong>
