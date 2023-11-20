@@ -5,6 +5,8 @@ import './App.css'
 import Navbar from './Components/Navbar'
 import Overview from './Overview'
 import Heroes from './Heroes'
+import Signup from './Signup'
+import Login from './Login'
 
 import {Routes, Route} from 'react-router-dom'
 import Followus from './Components/Followus'
@@ -15,13 +17,14 @@ function App() {
 
   return (
     <>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<Overview />} />
-      <Route path="/Heroes" element={<Heroes />} />
-
-    </Routes>
-    <Followus />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Overview />} />
+        <Route path="/" element={<Heroes />} />
+        <Route path='/Signup' element={<Signup />}></Route>
+        <Route path='/Login' element={<Login />}></Route>
+      </Routes>
+      <Followus />
     </>
   )
 }

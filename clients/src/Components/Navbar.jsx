@@ -3,6 +3,7 @@ import Logo from "../image/Logo.png";
 import {BiUser} from 'react-icons/bi';
 import {AiOutlineSearch} from 'react-icons/ai';
 import {AiOutlineDown} from 'react-icons/ai';
+import { MapsDropdown } from "./MapsDropdown";
 
 import { NavLink } from "react-router-dom";
 // import { navitems } from "./Navitems";
@@ -52,6 +53,13 @@ function Navbar(){
                                 <li><a>Hybrid</a></li>
                                 <li><a>Push</a></li>
                                 <li><a>TeamDeathMatch</a></li>
+                                {/* {MapsDropdown .map((MapDropdown, index) => {
+                                    return(
+                                        <>
+                                        <li >{MapDropdown.title}</li>
+                                        </>
+                                    )
+                                })} */}
                             </ul>
                         </div>
                         <div className="dropdown dropdown-hover">
@@ -77,7 +85,9 @@ function Navbar(){
                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-box w-52">
                             <li className="bg-[#218FFE] h-[33px] w-[100px] rounded-md text-white text-center"><a>Log in</a></li>
                             <li className=""><a>Account Setting</a></li>
-                            <li><a>Sign Up</a></li>
+                            <li>
+                                <NavLink to="Signup">Sign Up</NavLink>
+                            </li>
                         </ul>
                     </div>
                     <li className="bg-[#FF9737] h-[33px] w-[100px] rounded-md text-white text-center hover:bg-[#ff7a37] hover:rounded-md p-1">
