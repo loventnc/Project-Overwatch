@@ -75,7 +75,9 @@ function Navbar(){
                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-box w-52">
                             <li className="bg-[#218FFE] h-[33px] w-[100px] rounded-md text-white text-center"><a>Log in</a></li>
                             <li className=""><a>Account Setting</a></li>
-                            <li><a>Sign Up</a></li>
+                            <li>
+                                <NavLink to="Signup">Sign Up</NavLink>
+                            </li>
                         </ul>
                     </div>
                     <li className="bg-[#FF9737] h-[33px] w-[100px] rounded-md text-white text-center hover:bg-[#ff7a37] hover:rounded-md p-1">
