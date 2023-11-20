@@ -28,7 +28,9 @@ function Navbar(){
                                 <p className="pt-3.5 ml-1 text-xs"><AiOutlineDown/></p>
                             </div>
                             <ul tabIndex={0} className="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-box w-52">
-                                <li><a>All</a></li>
+                                <li>
+                                    <NavLink to="Heroes">All</NavLink>
+                                </li>
                                 <li><a>Tank</a></li>
                                 <li><a>Damage</a></li>
                                 <li><a>Support</a></li>

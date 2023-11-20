@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import HeadHero from "../src/image/HeadHero.png";
+import HeaderHeroesPage from "../image/HeaderHeroesPage.jpg";
 
 const Heroes = () => {
 
@@ -7,7 +7,7 @@ const Heroes = () => {
   return (
     <>
     <div className="bg-cover bg-center">
-        
+      <img src={HeaderHeroesPage} className="" alt="" width="800px" />
     </div>
     </>
   )
