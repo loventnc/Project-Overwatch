@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom'
-import HeaderHeroesPage from "../image/HeaderHeroesPage.jpg";
+const HeaderHeroesPage = "../src/image/HeaderHeroesPage.jpg";
 
 const Heroes = () => {
 
-  
+
   return (
-    <>
-    <div className="bg-cover bg-center">
-      <img src={HeaderHeroesPage} className="" alt="" width="800px" />
-    </div>
+    <><div className=''>
+      <div className="bg-cover bg-HeaderHeroesPage">
+        <h1>HEROES</h1>
+      </div>
+      </div>
     </>
   )
 }
