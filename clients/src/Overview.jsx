@@ -53,7 +53,6 @@ const Overview = () => {
       <img src={MapMenu} className="" alt=""  />
     </div>
 
-
     {/* GAME MODES */}
     <div className="bg-[#DDF2FD] pt-10">
       <div className='flex flex-col justify-center items-center '>
