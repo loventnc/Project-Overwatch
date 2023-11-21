@@ -5,7 +5,7 @@ import viteLogo from '/vite.svg'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-
+import SignupPic from "../src/image/Register.jpg"
 function login() {
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
@@ -13,7 +13,7 @@ function login() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3001/register', {email, password})
+        axios.post('http://localhost:3001/login', {email, password})
             .then(result => {console.log(result)
             navigate('/home')
             })
@@ -59,7 +59,9 @@ function login() {
                     <p>Don't have an Account?</p>
                 </Link>
             </div>
-            <div className='bg-gray w-[60%]'>1112222</div>
+            <div className='bg-gray w-[60%] h-full'>
+                <img src={SignupPic} className="object-cover h-full"/>
+            </div>
         </div>
   )
 }
