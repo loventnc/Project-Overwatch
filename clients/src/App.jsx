@@ -30,7 +30,7 @@ function App() {
 
   return (
     <>
-      {!Hidenav && <Navbar />}
+      {!Hidenav && <Navbar className="fixed top-1000 left-0 w-full z-50 bg-white shadow-lg" />}
       <Routes>
         <Route path="/" element={<Overview />} />
         <Route path="/" element={<Heroes />} />
