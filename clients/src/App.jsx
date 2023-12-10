@@ -7,6 +7,7 @@ import Overview from './Overview'
 import Heroes from './Heroes'
 import Signup from './Signup'
 import Login from './Login'
+import Maps from './Maps'
 
 import {Routes, Route} from 'react-router-dom'
 import Followus from './Components/Followus'
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Overview />} />
         <Route path="/Heroes" element={<Heroes />} />
+        <Route path="/Maps" element={<Maps />} />
         <Route path='/Signup' element={<Signup />}></Route>
         <Route path='/Login' element={<Login />}></Route>
       </Routes>
