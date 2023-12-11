@@ -31,8 +31,8 @@ const Overview = () => {
   return (
     <>
     {/* Hearder */}
-    <div className="bg-cover bg-center bg-BgOverviews backdrop-blur-sm bg-white/30 h-[660px] ">
-      <div className="grid grid-cols-2 ">
+    <div className="bg-cover bg-center bg-BgOverviews backdrop-blur-sm bg-white/30 h-[660px]">
+      <div className="grid grid-cols-2">
         <div className="mt-28">
           <h1 className="ml-36 ">
           <span className="text-black text-[50px] font-bold " >OVERWATCH 2 WIKI </span>
