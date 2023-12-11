@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar'
 import Overview from './Overview'
 import Heroes from './Heroes'
 import Signup from './Signup'
+import Community from './Community'
 import Login from './Login'
 
 import {Routes, Route, useNavigate} from 'react-router-dom'
@@ -34,6 +35,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Overview />} />
         <Route path="/" element={<Heroes />} />
+        <Route path="/Community" element={<Community />} />
         <Route path='/Signup' element={<Signup />} />
         <Route path='/Login' element={<Login />} />
       </Routes>
