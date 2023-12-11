@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Posts from './Components/Posts/Posts';
 import Form from './Components/Form/Form';
-
+import { useDispatch } from 'react-redux';
 import { Container, AppBar, Typography, Grow, Grid} from '@mui/material';
 
+import { getPosts } from './actions/posts';
+// import Posts from './Components/Posts/Posts';
+// import Form from './Components/Form/Form';
+
 const Community = () => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(getPosts());
+    }, [dispatch]);
+    
     return (
         <Container maxwidth="lg">
             <AppBar position="static" color="inherit">
