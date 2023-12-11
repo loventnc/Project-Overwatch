@@ -14,7 +14,7 @@ function Navbar(){
     
     return (
     <>
-    <div className="bg-[#DDF2FD] h-[70px] pt-2">
+    <div className="bg-[#DDF2FD] h-[70px] w-screen pt-2">
         {/* Head */}
         <div className="flex space-x-4 justify-between items-center h-[50px] bg-white text-black container mx-auto px-[5px] rounded-lg ">
             <div className="flex items-center">
