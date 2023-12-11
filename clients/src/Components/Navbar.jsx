@@ -14,11 +14,11 @@ function Navbar(){
     
     return (
     <>
-    <div className="bg-[#DDF2FD] h-[70px] pt-2">
+    <div className="flex justify-center items-center bg-[#DDF2FD] h-[70px] pt-2 w-full"> 
         {/* Head */}
-        <div className="flex space-x-4 justify-between items-center h-[50px] bg-white text-black container mx-auto px-[5px] rounded-lg ">
+        <div className="flex space-x-4 justify-between items-center h-[90%] w-[90%] bg-white text-black px-5 rounded-lg">
             <div className="flex items-center">
-                    <img src={Logo} className="mx-5" alt="" width="50px" />
+                    <img src={Logo} className="mx-5" alt="" width="3%" />
                     <ul className="flex justify-between gap-14 text-[18px] rounded-full">
                         <li className="hover:bg-[#ece9e9] hover:rounded-md p-1" >
                             <NavLink to ="">Overview</NavLink>
