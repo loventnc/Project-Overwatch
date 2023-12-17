@@ -20,15 +20,27 @@ console.log(HsTank);
         <div className='flex flex-row gap-10'>
           <div className='flex flex-row justify-center bg-white h-[40px] w-[130px] font-semibold'>
             <img src={Tank} className="" alt="" width="40px" />
-            <h1 className='text-[22px] pt-1 pl-2'>TANKS</h1>
+            <h1 className='text-[22px] pt-1 pl-2'>
+              <Link to='/HeroesTank'>
+                TANKS
+              </Link>
+            </h1>
           </div>
           <div className='flex flex-row justify-center bg-white h-[40px] w-[150px] font-semibold'>
             <img src={DPS} className="" alt="" width="40px" />
-            <h1 className='text-[22px] pt-1 pl-2'>DAMAGE</h1>
+            <h1 className='text-[22px] pt-1 pl-2'>
+              <Link to='/HeroesDamage'>
+                DAMAGE
+              </Link>
+            </h1>
           </div>
           <div className='flex flex-row justify-center bg-white h-[40px] w-[160px] font-semibold'>
             <img src={Support} className="" alt="" width="40px" />
-            <h1 className='text-[22px] pt-1 pl-2'>SUPPORT</h1>
+            <h1 className='text-[22px] pt-1 pl-2'>
+              <Link to='/HeroesSupport'>
+                SUPPORT
+              </Link>
+            </h1>
           </div>
         </div>
         <div className='pt-10'>
