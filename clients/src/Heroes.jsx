@@ -39,14 +39,20 @@ const Heroes = () => {
         </div>
       </div>
 
-    
-
-      {/* <div className='flex flex-row justify-center gap-16 p-10 w-full'>
-        <div className='bg-white h-[220px] w-[180px] rounded-none'>
-            <img src={Ashelogo} className="flex justify-center items-center" alt="" width="180px" />
-            <h1 className='flex justify-center items-center pt-2 text-[18px] font-medium'>ASHE</h1>
+      {/* Content */}
+      <div className='flex justify-center items-center'>
+        <div className='grid grid-cols-6 gap-14 p-10'>
+          {Heroesin.map((hero, index) => (
+            <div key={index} className='bg-white h-[220px] w-[180px] rounded-none text-center border-4 border-white'>
+              <a href={`/heroes/${hero.name.toLowerCase()}`}>
+                <img src={hero.img} className="flex justify-center items-center bg-black" alt={hero.name} width="180px" />
+                <h1 className='flex justify-center items-center pt-2 text-[18px] font-medium'>{hero.name}</h1>
+              </a>
+            </div>
+          ))}
         </div>
-      </div> */}
+      </div>
+
     </div>
     </>
     

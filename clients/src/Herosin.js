@@ -67,6 +67,10 @@ export const Heroesin = [
         name: "LÚCIO",
     },
     {
+        img : "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9ee3f5a62893091d575ec0a0d66df878597086374202c6fc7da2d63320a7d02e.png",
+        name: "MAUGA",
+    },
+    {
         img : "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1533fcb0ee1d3f9586f84b4067c6f63eca3322c1c661f69bfb41cd9e4f4bcc11.png",
         name: "MEI",
     },
