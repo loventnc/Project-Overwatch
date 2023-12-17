@@ -3,7 +3,7 @@ import Tank from "../src/image/Tank.png";
 import DPS from "../src/image/DPS.png";
 import Support from "../src/image/Support.png";
 import Ashelogo from "../src/image/Ashelogo.png";
-import { Heroesin } from "./Herosin.js";
+import { Heroesin } from "./Heroesin.js";
 
 
 const Heroes = () => {

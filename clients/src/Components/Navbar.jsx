@@ -32,9 +32,15 @@ function Navbar(){
                                 <li>
                                     <NavLink to="Heroes">All</NavLink>
                                 </li>
-                                <li><a>Tank</a></li>
-                                <li><a>Damage</a></li>
-                                <li><a>Support</a></li>
+                                <li>
+                                    <NavLink to="HeroesTank">Tank</NavLink>
+                                </li>
+                                <li>
+                                    <a>Damage</a>
+                                </li>
+                                <li>
+                                    <a>Support</a>
+                                </li>
                             </ul>
                         </div>
                         <div className="dropdown dropdown-hover">
