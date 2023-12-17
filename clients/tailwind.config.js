@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         "BgOverviews" : 'url("https://www.gameinformer.com/sites/default/files/styles/full/public/2021/05/20/99fb0779/montecarlo.jpg")',
-        "BGHeader" : 'url("https://news.xbox.com/en-us/wp-content/uploads/sites/2/2023/08/Invasion_KeyArt_LayeredSolar_v3_3840x2160_center-00462e75b05ace708b8a.jpg")'
+        "BGHeader" : 'url("https://news.xbox.com/en-us/wp-content/uploads/sites/2/2023/08/Invasion_KeyArt_LayeredSolar_v3_3840x2160_center-00462e75b05ace708b8a.jpg")',
+        "Bgheroes" : 'url("https://static.invenglobal.com/upload/image/2021/05/20/i1621545140786087.png")'
       }
       
     },

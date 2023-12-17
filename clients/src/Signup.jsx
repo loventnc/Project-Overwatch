@@ -9,10 +9,9 @@ function Signup(){
     const [password, setPassword] = useState()
 
     return (
-        <div className='bg-gray w-full'>
-          <div className="flex h-200px w-full relative">
-            <img className="w-[100%] object-contain blur-sm" src="https://static.invenglobal.com/upload/image/2021/05/20/i1621545140786087.png" alt="Image 1" />
-            <img className="absolute inset-0 object-cover" src="https://media.discordapp.net/attachments/1164742335322656818/1185963348580388884/Ana_portrait2.webp?ex=65918570&is=657f1070&hm=f5cd70060af9d7de5df16b78ce24583a682c32b23c99f2ac8f6ee1c63e8418e5&=&format=webp&width=957&height=936" alt="Image 2" />
+        <div className='bg-gray w-full h-screen'>
+          <div className="flex h-4/6 relative bg-cover bg-center bg-Bgheroes bg-white justify-end">
+            <img className="object-contain" src="https://media.discordapp.net/attachments/1164742335322656818/1185963348580388884/Ana_portrait2.webp?ex=65918570&is=657f1070&hm=f5cd70060af9d7de5df16b78ce24583a682c32b23c99f2ac8f6ee1c63e8418e5&=&format=webp&width=957&height=936" alt="Image 1" />
           </div>
           <div>
             Hellow
