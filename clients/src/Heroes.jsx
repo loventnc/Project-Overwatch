@@ -3,6 +3,7 @@ import Tank from "../src/image/Tank.png";
 import DPS from "../src/image/DPS.png";
 import Support from "../src/image/Support.png";
 import Ashelogo from "../src/image/Ashelogo.png";
+import { Heroesin } from "./Herosin.js";
 
 
 const Heroes = () => {
@@ -37,32 +38,15 @@ const Heroes = () => {
           <h4 className='flex justify-center text-center text-[18px]'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Overwatch features an international cast of powerful heroes with captivating personalities and backstories. Explore the full roster below.</h4>
         </div>
       </div>
-      <div className='flex flex-row justify-center gap-16 p-10 w-full'>
+
+    
+
+      {/* <div className='flex flex-row justify-center gap-16 p-10 w-full'>
         <div className='bg-white h-[220px] w-[180px] rounded-none'>
             <img src={Ashelogo} className="flex justify-center items-center" alt="" width="180px" />
             <h1 className='flex justify-center items-center pt-2 text-[18px] font-medium'>ASHE</h1>
         </div>
-        <div className='bg-white h-[220px] w-[180px] rounded-none'>
-            <img src={Ashelogo} className="flex justify-center items-center" alt="" width="180px" />
-            <h1 className='flex justify-center items-center pt-2 text-[18px] font-medium'>ASHE</h1>
-        </div>
-        <div className='bg-white h-[220px] w-[180px] rounded-none'>
-            <img src={Ashelogo} className="flex justify-center items-center" alt="" width="180px" />
-            <h1 className='flex justify-center items-center pt-2 text-[18px] font-medium'>ASHE</h1>
-        </div>
-        <div className='bg-white h-[220px] w-[180px] rounded-none'>
-            <img src={Ashelogo} className="flex justify-center items-center" alt="" width="180px" />
-            <h1 className='flex justify-center items-center pt-2 text-[18px] font-medium'>ASHE</h1>
-        </div>
-        <div className='bg-white h-[220px] w-[180px] rounded-none'>
-            <img src={Ashelogo} className="flex justify-center items-center" alt="" width="180px" />
-            <h1 className='flex justify-center items-center pt-2 text-[18px] font-medium'>ASHE</h1>
-        </div>
-        <div className='bg-white h-[220px] w-[180px] rounded-none'>
-            <img src={Ashelogo} className="flex justify-center items-center" alt="" width="180px" />
-            <h1 className='flex justify-center items-center pt-2 text-[18px] font-medium'>ASHE</h1>
-        </div>
-      </div>
+      </div> */}
     </div>
     </>
     
