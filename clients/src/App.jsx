@@ -9,6 +9,8 @@ import Signup from './Signup'
 import Login from './Login'
 import Maps from './Maps'
 import HeroesTank from './HeroesTank'
+import HeroesDamage from './HeroesDamage'
+import HeroesSupport from './HeroesSupport'
 
 import {Routes, Route} from 'react-router-dom'
 import Followus from './Components/Followus'
@@ -27,6 +29,8 @@ function App() {
         <Route path='/Signup' element={<Signup />}></Route>
         <Route path='/Login' element={<Login />}></Route>
         <Route path='/HeroesTank' element={<HeroesTank />} />
+        <Route path='/HeroesDamage' element={<HeroesDamage />} />
+        <Route path='/HeroesSupport' element={<HeroesSupport />} />
       </Routes>
       <Followus />
     </>

@@ -1,4 +1,4 @@
-export const HeroesSupport = [
+export const HsSupport = [
     {
         name: "ANA",
         img : "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3429c394716364bbef802180e9763d04812757c205e1b4568bc321772096ed86.png",
@@ -32,11 +32,6 @@ export const HeroesSupport = [
     {
         name: "LÚCIO",
         img : "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e2ff2527610a0fbe0c9956f80925123ef3e66c213003e29d37436de30b90e4e1.png",
-        
-    },
-    {
-        name: "MAUGA",
-        img : "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9ee3f5a62893091d575ec0a0d66df878597086374202c6fc7da2d63320a7d02e.png",
         
     },
     {

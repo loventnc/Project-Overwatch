@@ -1,4 +1,4 @@
-export const HeroesDamage = [
+export const HsDamage = [
     {
         name: "ASHE",
         img : "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8dc2a024c9b7d95c7141b2ef065590dbc8d9018d12ad15f76b01923986702228.png",

@@ -2,10 +2,11 @@ import { Link } from 'react-router-dom'
 import Tank from "../src/image/Tank.png";
 import DPS from "../src/image/DPS.png";
 import Support from "../src/image/Support.png";
-import { HsTank } from "./HsTank.js";
+import { HsSupport } from './HsSupport.js';
 
-const HeroesTank = () => {
-console.log(HsTank);
+const HeroesSupport = () => {
+console.log(HsSupport);
+
   return (
     <>
     {/* Hearder */}
@@ -39,7 +40,7 @@ console.log(HsTank);
       {/* Content */}
       <div className='flex justify-center items-center'>
         <div className='grid grid-cols-6 gap-14 p-10'>
-          {HsTank.map((hero, index) => (
+          {HsSupport.map((hero, index) => (
             <div key={index} className='bg-white h-[220px] w-[180px] rounded-none text-center border-4 border-white'>
               <a href={`/heroes/${hero.name.toLowerCase()}`}>
                 <img src={hero.img} className="flex justify-center items-center bg-black" alt={hero.name} width="180px" />
@@ -57,4 +58,4 @@ console.log(HsTank);
   )
 }
 
-export default HeroesTank
+export default HeroesSupport

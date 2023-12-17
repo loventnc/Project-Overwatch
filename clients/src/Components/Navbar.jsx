@@ -36,10 +36,10 @@ function Navbar(){
                                     <NavLink to="HeroesTank">Tank</NavLink>
                                 </li>
                                 <li>
-                                    <a>Damage</a>
+                                    <NavLink to="HeroesDamage">Damage</NavLink>
                                 </li>
                                 <li>
-                                    <a>Support</a>
+                                    <NavLink to ="HeroesSupport">Support</NavLink>
                                 </li>
                             </ul>
                         </div>

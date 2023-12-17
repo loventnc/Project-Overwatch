@@ -1,4 +1,4 @@
-export const HeroesTank = [
+export const HsTank = [
     {
         name: "D.VA",
         img : "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ca114f72193e4d58a85c087e9409242f1a31e808cf4058678b8cbf767c2a9a0a.png",
@@ -12,6 +12,11 @@ export const HeroesTank = [
     {
         name: "JUNKER QUEEN",
         img : "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cef2406b2244b80506f83b8fb9ebaf214f41fa8795cbeef84026cd8018561d04.png",
+        
+    },
+    {
+        name: "MAUGA",
+        img : "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9ee3f5a62893091d575ec0a0d66df878597086374202c6fc7da2d63320a7d02e.png",
         
     },
     {
