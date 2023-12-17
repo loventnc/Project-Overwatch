@@ -1,13 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { useState } from 'react';
+import './App.css';
 import Navbar from './Components/Navbar'
-import Overview from './Overview'
-import Heroes from './Heroes'
-import Signup from './Signup'
-import Login from './Login'
-import Maps from './Maps'
+import Overview from './Overview';
+import Heroes from './Heroes';
+import Signup from './Signup';
+import Login from './Login';
+import Maps from './Maps';
 
 import {Routes, Route} from 'react-router-dom'
 import Followus from './Components/Followus'

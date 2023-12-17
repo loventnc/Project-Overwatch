@@ -66,13 +66,10 @@ function Navbar(){
                         </div>
                         <div className="dropdown dropdown-hover">
                             <div className="flex flex-row">
-                                <label tabIndex={0} className="p-1">Community</label>
-                                <p className="pt-3.5 ml-1 text-xs"><AiOutlineDown/></p>
+                                <label tabIndex={0} className="p-1">
+                                    <NavLink to="Community">Community</NavLink>
+                                </label>
                             </div>
-                            <ul tabIndex={0} className="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-box w-52">
-                                <li><a>Create Post</a></li>
-                                <li><a>Post</a></li>
-                            </ul>
                         </div>
                     </ul>
             </div>
