@@ -10,7 +10,6 @@ const signupInitialValues = {
   
 }
 
-
 const Login = () => {
   const [account, toggleAccount] = useState('login');
   const [signup, setSignup] = useState(signupInitialValues);
