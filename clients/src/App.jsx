@@ -5,12 +5,11 @@ import './App.css'
 import Navbar from './Components/Navbar'
 import Overview from './Overview'
 import Heroes from './Heroes'
-import Signup from './Signup'
-import Login from './Login'
 import Maps from './Maps'
 import HeroesTank from './HeroesTank'
 import HeroesDamage from './HeroesDamage'
 import HeroesSupport from './HeroesSupport'
+import Login from './Components/account/Login'
 
 import {Routes, Route} from 'react-router-dom'
 import Followus from './Components/Followus'
@@ -26,15 +25,14 @@ function App() {
         <Route path="/" element={<Overview />} />
         <Route path="/Heroes" element={<Heroes />} />
         <Route path="/Maps" element={<Maps />} />
-        <Route path='/Signup' element={<Signup />}></Route>
-        <Route path='/Login' element={<Login />}></Route>
         <Route path='/HeroesTank' element={<HeroesTank />} />
         <Route path='/HeroesDamage' element={<HeroesDamage />} />
         <Route path='/HeroesSupport' element={<HeroesSupport />} />
+        <Route path='/Login' element={<Login />} />
       </Routes>
       <Followus />
     </>
-  )
+  ) 
 }
 
 export default App
