@@ -1,17 +1,27 @@
-import React from 'react'
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import Post from './Components/Post';
-import { Routes}
+import Navbar from './Components/Navbar';
 
 const Community = () => {
-    return (
-      <div className="flex justify-center">
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-      </div>
-    );
-  };
-  
+  return (
+    <div>
+      <Routes>
+        
+        <Route
+          index
+          element={
+            <div className="flex justify-center">
+              <Post />
+              <Post />
+              <Post />
 
-export default Community
+            </div>
+          }
+        />
+      </Routes>
+    </div>
+  );
+};
+
+export default Community;

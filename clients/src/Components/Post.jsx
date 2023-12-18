@@ -4,7 +4,7 @@ export default function Post(){
         <a href="#">
           <img
             className="rounded-t-lg"
-            src="/docs/images/blog/image-1.jpg"
+            src="./src/Image/Ashe.jpg"
             alt=""
           />
         </a>

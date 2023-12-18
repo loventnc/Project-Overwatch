@@ -10,10 +10,14 @@ import HeroesTank from './HeroesTank'
 import HeroesDamage from './HeroesDamage'
 import HeroesSupport from './HeroesSupport'
 import Community from './Community'
+import LoginPage from './pages/LoginPage'
+import RegisterPage from './pages/RegisterPage'
+
 
 
 import {Routes, Route} from 'react-router-dom'
 import Followus from './Components/Followus'
+
 // import DropdownMenu from "./DropdownMenu";
 
 function App() {
@@ -21,7 +25,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar /> 
       <Routes>
         <Route path="/" element={<Overview />} />
         <Route path="/Heroes" element={<Heroes />} />
@@ -29,8 +33,9 @@ function App() {
         <Route path='/HeroesTank' element={<HeroesTank />} />
         <Route path='/HeroesDamage' element={<HeroesDamage />} />
         <Route path='/HeroesSupport' element={<HeroesSupport />} />
-        {/* <Route path='/Login' element={<Login />} /> */}
         <Route path='/Community' element={<Community />} />
+        <Route path="/Community/Login" element={<LoginPage />} />
+        <Route path="/Community/Register" element={<RegisterPage />} />
       </Routes>
       <Followus />
     </>

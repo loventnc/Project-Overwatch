@@ -4,13 +4,35 @@ import {BiUser} from 'react-icons/bi';
 import {AiOutlineSearch} from 'react-icons/ai';
 import {AiOutlineDown} from 'react-icons/ai';
 import { MapsDropdown } from "./MapsDropdown";
-
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
 // import { navitems } from "./Navitems";
 // import { DropdowmMenu } from "./DropdowmMen";
 
-function Navbar(){
-    // const [dropdown, setDropdown] = useState(false);
+export default function Navbar(){
+    const [username, setUsername] = useState(null);
+
+    useEffect(() => {
+        fetch('http://localhost:3000/profile', {
+            credentials: 'include',
+        }).then(response => {
+            response.json().then(userInfo => {
+                setUsername(userInfo.username);
+            })
+        });
+    }, [])
+
+
+    function logout(){
+        fetch('http://localhost:3000/logout', {
+            credentials: 'include',
+            method: 'POST',
+        })
+        setUsername(null);
+    }
+
     
     return (
     <>
@@ -82,22 +104,40 @@ function Navbar(){
                         </div>
                     </ul>
             </div>
+
+                
             <div className="flex items-center">
                     <ul className="flex justify-between gap-14 text-[18px] rounded-full">
                     <p className="mt-1 hover:bg-[#ece9e9] hover:rounded-md p-1"><AiOutlineSearch/></p>
+
+
+                {username && (
+                            <>
+                                <Link to ="/create">Create new post</Link>
+                                <a onClick={logout}>Logout</a>
+                            </>
+                )}
+                {!username && (
                     <div className="dropdown dropdown-hover">
                         <div className="flex flex-row">
                             <label tabIndex={0} className="p-1">Account</label>
                             <p className="pt-3.5 ml-1 text-xs"><AiOutlineDown/></p>
                         </div>
                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-box w-52">
-                            <li className="bg-[#218FFE] h-[33px] w-[100px] rounded-md text-white text-center"><a>Log in</a></li>
+                            <li className="bg-[#218FFE] h-[33px] w-[100px] rounded-md text-white text-center"><NavLink to="/community/login">Log in</NavLink></li>
                             <li className=""><a>Account Setting</a></li>
                             <li>
-                                <NavLink to="Signup">Sign Up</NavLink>
+                                <NavLink to="/community/register">Sign Up</NavLink>
                             </li>
                         </ul>
                     </div>
+                )}
+
+
+
+
+
+                    
                     <li className="bg-[#FF9737] h-[33px] w-[100px] rounded-md text-white text-center hover:bg-[#ff7a37] hover:rounded-md p-1">
                     <NavLink to='https://download.battle.net/en-us?product=ow&blzcmp=ow_gamesite'>Play Now</NavLink>
                     </li>
@@ -109,5 +149,3 @@ function Navbar(){
     </>
     )
 }
-
-export default Navbar
