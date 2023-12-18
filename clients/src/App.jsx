@@ -11,6 +11,8 @@ import Maps from './Maps'
 import HeroesTank from './HeroesTank'
 import HeroesDamage from './HeroesDamage'
 import HeroesSupport from './HeroesSupport'
+import Character from './character'
+
 
 import {Routes, Route} from 'react-router-dom'
 import Followus from './Components/Followus'
@@ -26,11 +28,12 @@ function App() {
         <Route path="/" element={<Overview />} />
         <Route path="/Heroes" element={<Heroes />} />
         <Route path="/Maps" element={<Maps />} />
-        <Route path='/Signup' element={<Signup />}></Route>
-        <Route path='/Login' element={<Login />}></Route>
+        <Route path='/Signup' element={<Signup />} />
+        <Route path='/Login' element={<Login />}/>
         <Route path='/HeroesTank' element={<HeroesTank />} />
         <Route path='/HeroesDamage' element={<HeroesDamage />} />
-        <Route path='/HeroesSupport' element={<HeroesSupport />} />
+        <Route path='/heroesSupport' element={<HeroesSupport />} />
+        <Route path='/Heroes/:name' element={<Character />} />
       </Routes>
       <Followus />
     </>
