@@ -652,9 +652,9 @@ export const Heroesin = [
         abilitties05 : "Annihilation",
         story : "",
         video : "https://youtu.be/vd_SPOkaZZ4",
-        imgoverviews01 : "",
-        imgoverviews02 : "",
-        imgoverviews03 : "",
+        imgoverviews01 : "https://imageio.forbes.com/specials-images/imageserve/63826c59079863b6291a69fe/Overwatch-2-hero-Ramattra/960x0.jpg?format=jpg&width=960",
+        imgoverviews02 : "https://images.blz-contentstack.com/v3/assets/blt2477dcaf4ebd440c/blt7d27f69cb66e3663/637ef9026f080311223b5462/ramattra-01.jpg",
+        imgoverviews03 : "https://img.4gamers.com.tw/ckfinder-th/image2/auto/2022-12/overwatch%202%20ramattra-221216-180859.jpg?versionId=a2lzQG7qre2.MiNNMNIbcJoW3zKMx6Yy",
     },
     {
         name: "REAPER",
