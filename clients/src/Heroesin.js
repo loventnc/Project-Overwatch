@@ -19,9 +19,9 @@ export const Heroesin = [
         abilitties04 : "Nano Boost",
         story : "A founding member of Overwatch and once renowned as the greatest sniper in the world, Ana Amari comes from a long line of decorated military veterans. Though she was thought to have perished in a firefight with Talon, Ana has rejoined the fray to protect her country, family, and closest allies.",
         video : "https://youtu.be/yzFWIw7wV8Q",
-        imgoverviews01 : "",
-        imgoverviews02 : "",
-        imgoverviews03 : "",
+        imgoverviews01 : "https://cdn.mos.cms.futurecdn.net/XMH8VeStCPmMnzDL9eKqgn.jpg",
+        imgoverviews02 : "https://dotesports.com/wp-content/uploads/2018/08/12050041/ow_ana_3p_006_png_jpgcopy.jpg",
+        imgoverviews03 : "https://oyster.ignimgs.com/mediawiki/apis.ign.com/overwatch-2/2/2b/OW2_Ana_2.jpg?width=1280",
     },
     {
         name: "ASHE",
