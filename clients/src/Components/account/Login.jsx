@@ -1,8 +1,13 @@
 import React from 'react'
+import TextInput from '../TextInput';
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <div>
+        <TextInput />
+        <TextInput />
+        
+    </div>
   )
 }
 
