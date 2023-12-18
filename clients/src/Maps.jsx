@@ -1,4 +1,8 @@
 import { Link } from 'react-router-dom'
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
+
 import Assault from "../src/image/Assault.jpg";
 import CaptureFlag from "../src/image/CaptureFlag.png";
 import Control from "../src/image/Control.png";
@@ -10,11 +14,27 @@ import Hybrid from "../src/image/Hybrid.png";
 import Push from "../src/image/Push.png";
 import TeamDeathMatch from "../src/image/TeamDeathMatch.png";
 
+
 const Maps = () => {
+    const [mapsData, setMapsData] = useState([]);
+    
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get("https://overfast-api.tekrop.fr/maps");
+                setMapsData(response.data); // Assuming the API response is an array of maps data
+            }   catch (error) {
+                console.error("Error fetching maps data:", error);
+            }
+        };
+    
+        fetchData();
+    }, []);
+
     return (
         <>
         {/* Hearder */}
-        <div className='bg-cover bg-center bg-BGHeader h-[660px]'>
+        <div className='bg-cover bg-center bg-BGMaps h-[660px]'>
             <div className="ml-32 pt-72">
             {/* <h1 className='text-white text-[50px] font-semibold '>HEROES</h1> */}
             </div>
@@ -44,12 +64,13 @@ const Maps = () => {
                             <img src={Elimination} className="" alt="" width="40px" />
                             <h1 className='text-[22px] pt-1 pl-2 text-white'>Elimination</h1>
                         </div>
+                    </div>
+                    
+                    <div className='flex flex-row items-center gap-10'>
                         <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold'>
                             <img src={Escort} className="" alt="" width="40px" />
                             <h1 className='text-[22px] pt-1 pl-2 text-white'>Escort</h1>
                         </div>
-                    </div>
-                    <div className='flex flex-row items-center gap-10'>
                         <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold'>
                             <img src={Flashpoint} className="" alt="" width="40px" />
                             <h1 className='text-[22px] pt-1 pl-2 text-white'>Flashpoint</h1>
@@ -73,6 +94,28 @@ const Maps = () => {
                 </div>
             </div>
         </div>
+            
+        {/* Render maps data */}
+        <div className='flex justify-center items-center bg-[#DDF2FD]'>
+            <div className='grid grid-cols-4  gap-14 p-10'>
+                {mapsData.map((map, index) => (
+                    <div key={index} className='bg-white h-[210px] w-[270px] rounded-none text-center border-4 border-white'>
+                        <Link to={`/maps/${map.name.toLowerCase()}`}>
+                            <img
+                                src={map.screenshot}
+                                className="flex justify-center items-center"
+                                alt={map.name}
+                                width="270px"
+                                style={{ maxHeight: '210px', objectFit: 'cover' }}
+                            />
+                            <h1 className='flex justify-center items-center pt-2 text-[18px] font-medium'>{map.name}</h1>
+                        </Link>
+                    </div>
+                ))}
+            </div>
+        </div>
+
+        
         </>
     )
 }

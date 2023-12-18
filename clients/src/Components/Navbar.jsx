@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 // import { navitems } from "./Navitems";
 // import { DropdowmMenu } from "./DropdowmMen";
 
-function Navbar(){
+export default function Navbar(){
     // const [dropdown, setDropdown] = useState(false);
     
     return (
@@ -110,5 +110,3 @@ function Navbar(){
     </>
     )
 }
-
-export default Navbar
