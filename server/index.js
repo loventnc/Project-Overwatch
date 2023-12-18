@@ -1,22 +1,16 @@
-import express from 'express';
-import dotenv from 'dotenv';    
-
-
-import Connection from './database/db.js';
-import Router from './routes/route.js';
-
-
-dotenv.config();
-
+const { MongoClient } = require('mongodb');
+const cors = require('cors');
+const express = require('express');
 const app = express();
 
-app.use('/', Router);
+const uri = "mongodb+srv://SuperDoggez:admin1234@projectoverwatch.429itzm.mongodb.net/";
+const PORT = 3000;
+const client = new MongoClient(uri);
 
-const PORT = 8000;
+app.get('/', (req, res) => {
+    res.send({ hi: 'there' });
+})
 
-app.listen(PORT, () => console.log(`Server running on port: http://localhost:${PORT}`));
-
-const USERNAME = process.env.DB_USERNAME;
-const PASSWORD = process.env.DB_PASSWORD;
-
-Connection(USERNAME, PASSWORD);
+app.listen(PORT, () => {
+    console.log(`Server listening on port ${PORT}`);
+});
