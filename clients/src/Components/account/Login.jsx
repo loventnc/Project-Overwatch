@@ -1,6 +1,7 @@
 import React from 'react';
 import CustomButton from '../CustomButton';
 import { useState } from 'react';
+
 import { API } from '../../service/api';
 
 const signupInitialValues = {
@@ -22,8 +23,8 @@ const Login = () => {
     setSignup({...signup, [e.target.name]: e.target.value});
   }
 
-  const signupUser = async () => {
-    let responce = await API.userSignup(signup);
+  const signupUser = () => {
+    API.userSignup(signup);
   }
 
   return (
