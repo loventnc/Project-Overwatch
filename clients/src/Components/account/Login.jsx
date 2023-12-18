@@ -24,8 +24,8 @@ const Login = () => {
     setSignup({...signup, [e.target.name]: e.target.value});
   }
 
-  const signupUser = () => {
-    API.userSignup(signup);
+  const signupUser = async() => {
+    let response = await API.userSignup(signup);
   }
 
   return (
