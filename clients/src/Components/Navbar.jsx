@@ -52,6 +52,7 @@ function Navbar(){
                                 <li>
                                     <NavLink to="Maps">All</NavLink>
                                 </li>
+                                <li><a>Assault</a></li>
                                 <li><a>CaptureFlag</a></li>
                                 <li><a>Control</a></li>
                                 <li><a>Deathmatch</a></li>

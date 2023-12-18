@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Assault from "../src/image/Assault.jpg";
 import CaptureFlag from "../src/image/CaptureFlag.png";
 import Control from "../src/image/Control.png";
 import Deathmatch from "../src/image/Deathmatch.png";
@@ -23,6 +24,10 @@ const Maps = () => {
             <div className='flex flex-col items-center pt-4'>
                 <div className='flex flex-col gap-4'>
                     <div className='flex flex-row items-center gap-10'> 
+                        <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold'>
+                            <img src="https://overfast-api.tekrop.fr/static/gamemodes/assault-icon.svg" className="" alt="" width="40px" />
+                            <h1 className='text-[22px] pt-1 pl-2 text-white'>Assault</h1>
+                        </div>
                         <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold'>
                             <img src={CaptureFlag} className="" alt="" width="40px" />
                             <h1 className='text-[22px] pt-1 pl-2 text-white'>CaptureFlag</h1>
