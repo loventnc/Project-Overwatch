@@ -32,20 +32,38 @@ export default function LoginPage() {
         return <Navigate to={'/community'} />;
     }
     return (
-        <div>
-            <form onSubmit={login} className='flex justify-center'>
-                <input type="text" 
-                placeholder="Username" 
-                value={username} 
-                onChange={ev => setUsername(ev.target.value)}/>
-                
-                <input type="password" 
-                placeholder="Password" 
-                value={password} 
-                onChange={ev => setPassword(ev.target.value)}/>
+        <div className='flex justify-center w-screen h-screen'>
+            <div className='flex justify-center w-2/4 items-center '>
+                <form onSubmit={login} className='block'>
+                <label className="form-control w-full max-w-xs">
+                    <div className="label">
+                        <span className="label-text">USERNAME</span>
+                    </div>
+                    <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+                </label>
+                <label className="form-control w-full max-w-xs">
+                    <div className="label">
+                        <span className="label-text">PASSWORD</span>
+                    </div>
+                    <input type="password" 
+                    placeholder="Type here" 
+                    value={password} 
+                    onChange={ev => setPassword(ev.target.value)}
+                    className='input input-bordered w-full max-w-xs'/>
+                </label>
 
-                <button type="submit">Login</button>
-            </form>
+                
+                    
+                    
+
+                    <button type="submit" className='btn glass '>Login</button>
+                </form>
+            </div>
+
+
+            <div className='w-2/4'>
+                <img src="https://i.imgur.com/5Qg1j1z.png" alt="" className='w-full h-full'/>
+            </div>
         </div>
     )
 }
