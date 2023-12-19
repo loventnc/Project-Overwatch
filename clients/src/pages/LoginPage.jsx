@@ -33,7 +33,7 @@ export default function LoginPage() {
     }
     return (
         <div>
-            <form onSubmit={login}>
+            <form onSubmit={login} className='flex justify-center'>
                 <input type="text" 
                 placeholder="Username" 
                 value={username} 
