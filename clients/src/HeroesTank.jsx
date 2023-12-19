@@ -18,7 +18,7 @@ console.log(HsTank);
     <div className='bg-[#DDF2FD] '>
       <div className='flex flex-col items-center pt-10'>
         <div className='flex flex-row gap-10'>
-          <div className='flex flex-row justify-center bg-white h-[40px] w-[130px] font-semibold '>
+          <div className='flex flex-row justify-center bg-white h-[40px] w-[150px] font-semibold rounded-md hover:scale-110 transition duration-50 hover:shadow-xl '>
             <img src={Tank} className="" alt="" width="40px" />
             <h1 className='text-[22px] pt-1 pl-2  '>
               <Link to='/HeroesTank'>
@@ -26,7 +26,7 @@ console.log(HsTank);
               </Link>
             </h1>
           </div>
-          <div className='flex flex-row justify-center bg-white h-[40px] w-[150px] font-semibold'>
+          <div className='flex flex-row justify-center bg-white h-[40px] w-[160px] font-semibold rounded-md hover:scale-110 transition duration-50 hover:shadow-xl'>
             <img src={DPS} className="" alt="" width="40px" />
             <h1 className='text-[22px] pt-1 pl-2'>
               <Link to='/HeroesDamage'>
@@ -34,7 +34,7 @@ console.log(HsTank);
               </Link>
             </h1>
           </div>
-          <div className='flex flex-row justify-center bg-white h-[40px] w-[160px] font-semibold'>
+          <div className='flex flex-row justify-center bg-white h-[40px] w-[170px] font-semibold rounded-md hover:scale-110 transition duration-50 hover:shadow-xl'>
             <img src={Support} className="" alt="" width="40px" />
             <h1 className='text-[22px] pt-1 pl-2'>
               <Link to='/HeroesSupport'>

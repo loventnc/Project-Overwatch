@@ -32,31 +32,31 @@ const MapsAssault = () => {
                     <div className='flex flex-col gap-4'>
                         <div className='flex flex-row items-center gap-10'> 
                             <Link to = "/MapsAssault">
-                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold'>
+                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold  rounded-md hover:scale-110 transition duration-50 hover:shadow-xl'>
                                     <img src="https://overfast-api.tekrop.fr/static/gamemodes/assault-icon.svg" className="" alt="" width="40px" />
                                     <h1 className='text-[22px] pt-1 pl-2 text-white'>Assault</h1>
                                 </div>
                             </Link>
                             <Link to ="/MapsCapture">
-                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold'>
+                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold rounded-md hover:scale-110 transition duration-50 hover:shadow-xl'>
                                     <img src={CaptureFlag} className="" alt="" width="40px" />
                                     <h1 className='text-[22px] pt-1 pl-2 text-white'>CaptureFlag</h1>
                                 </div>
                             </Link>
                             <Link to ="/MapsControl">
-                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold'>
+                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold rounded-md hover:scale-110 transition duration-50 hover:shadow-xl'>
                                     <img src={Control} className="" alt="" width="40px" />
                                     <h1 className='text-[22px] pt-1 pl-2 text-white'>Control</h1>
                                 </div>
                             </Link>
                             <Link to ="/MapsDeathmatch">
-                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold'>
+                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold rounded-md hover:scale-110 transition duration-50 hover:shadow-xl'>
                                     <img src={Deathmatch} className="" alt="" width="40px" />
                                     <h1 className='text-[22px] pt-1 pl-2 text-white'>Deathmatch</h1>
                                 </div>
                             </Link>
                             <Link to ="/MapsElimination">
-                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold'>
+                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold rounded-md hover:scale-110 transition duration-50 hover:shadow-xl'>
                                     <img src={Elimination} className="" alt="" width="40px" />
                                     <h1 className='text-[22px] pt-1 pl-2 text-white'>Elimination</h1>
                                 </div>
@@ -65,31 +65,31 @@ const MapsAssault = () => {
                         
                         <div className='flex flex-row items-center gap-10'>
                             <Link to ="/MapsEscort">
-                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold'>
+                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold rounded-md hover:scale-110 transition duration-50 hover:shadow-xl'>
                                     <img src={Escort} className="" alt="" width="40px" />
                                     <h1 className='text-[22px] pt-1 pl-2 text-white'>Escort</h1>
                                 </div>
                             </Link>
                             <Link to ="/MapsFlashpoint">
-                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold'>
+                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold rounded-md hover:scale-110 transition duration-50 hover:shadow-xl'>
                                     <img src={Flashpoint} className="" alt="" width="40px" />
                                     <h1 className='text-[22px] pt-1 pl-2 text-white'>Flashpoint</h1>
                                 </div>
                             </Link>
                             <Link to ="/MapsHybrid">
-                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold'>
+                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold rounded-md hover:scale-110 transition duration-50 hover:shadow-xl'>
                                     <img src={Hybrid} className="" alt="" width="40px" />
                                     <h1 className='text-[22px] pt-1 pl-2 text-white'>Hybrid</h1>
                                 </div>
                             </Link>
                             <Link to ="/MapsPush">
-                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold'>
+                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold rounded-md hover:scale-110 transition duration-50 hover:shadow-xl'>
                                     <img src={Push} className="" alt="" width="40px" />
                                     <h1 className='text-[22px] pt-1 pl-2 text-white'>Push</h1>
                                 </div>
                             </Link>
                             <Link to ="/MapsTeamDeathMatch">
-                                <div className='flex flex-row justify-center bg-black h-[40px] w-[240px] font-semibold'>
+                                <div className='flex flex-row justify-center bg-black h-[40px] w-[240px] font-semibold rounded-md hover:scale-110 transition duration-50 hover:shadow-xl'>
                                     <img src={TeamDeathMatch} className="" alt="" width="40px" />
                                     <h1 className='text-[22px] pt-1 pl-2 text-white'>TeamDeathMatch</h1>
                                 </div>
