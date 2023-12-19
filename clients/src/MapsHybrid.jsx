@@ -106,12 +106,18 @@ const MapsHybrid = () => {
             <div className='flex justify-center items-center bg-[#DDF2FD]'>
                 <div className='grid grid-cols-4  gap-14 p-10'>
                     { hybridMaps.map((map, index) => ( 
-                        <div key={index} className='bg-white h-[220px] w-[180px] rounded-none text-center border-4 border-white hover:scale-110 transition duration-50 hover:shadow-2xl'>
-                            <Link to={`/Maps/${map.name.toLowerCase()}`}>
-                                <img src={map.screenshot} className="flex justify-center items-center bg-black" alt={map.name} width="180px" />
-                                <h1 className='flex justify-center items-center pt-2 text-[18px] font-medium'>{map.name}</h1>
-                            </Link>
-                        </div>
+                        <div key={index} className='bg-white h-[210px] w-[270px] rounded-none text-center border-4 border-white hover:scale-110 transition duration-50 hover:shadow-2xl'>
+                        <Link to={`/Maps/${map.name.toLowerCase()}`}>
+                            <img
+                                src={map.screenshot}
+                                className="flex justify-center items-center"
+                                alt={map.name}
+                                width="270px"
+                                style={{ maxHeight: '210px', objectFit: 'cover' }}
+                            />
+                            <h1 className='flex justify-center items-center pt-2 text-[18px] font-medium'>{map.name}</h1>
+                        </Link>
+                    </div>
                     ))}
                 </div>
             </div>
