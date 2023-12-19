@@ -78,20 +78,20 @@ const Character = () => {
                             <div className="flex flex-wrap justify-center py-5">
 
 
-                                {data.abilities.map((ability, index) => (
-                                    <div key={index} className="m-4 text-center">
-                                        <div className="w-24 h-24 mx-auto mb-3">
-                                            <img src={ability.icon} className="rounded-full bg-slate-300" alt={ability.name} width="100px" />
-                                            {/* <div>{AbilitiesDetails[0].abilities}</div> */}
-                                        </div>
-                                        <p className="text-lg font-semibold mb-2">{ability.name}</p>
-                                        <div className="mb-3">
-                                            <p className="text-md bg-white rounded-md p-2">{ability.description}</p>
-                                        </div>
-                                        {/* Uncomment the line below if you have a video thumbnail */}
-                                        {/* <img src={ability.video.thumbnail} alt="Video Thumbnail" /> */}
+                            {data.abilities.map((ability, index) => (
+                                <div key={index} className="m-4 text-center bg-white rounded-md p-4 shadow-md">
+                                    <div className="w-24 h-24 mx-auto mb-3">
+                                    <img src={ability.icon} className="rounded-full bg-slate-300" alt={ability.name} width="100px" />
                                     </div>
+                                    <p className="text-lg font-semibold mb-2">{ability.name}</p>
+                                    <div className="mb-3">
+                                    <p className="text-md bg-white rounded-md p-2">{ability.description}</p>
+                                    </div>
+                                    {/* Uncomment the line below if you have a video thumbnail */}
+                                    {/* <img src={ability.video.thumbnail} alt="Video Thumbnail" /> */}
+                                </div>
                                 ))}
+
 
                             </div>
                         </div>
