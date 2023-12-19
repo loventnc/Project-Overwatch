@@ -23,6 +23,7 @@ import HybridPIC from "../src/image/HybridPIC.jpg";
 import PushPIC from "../src/image/PushPIC.jpg";
 import TeamDeathMatchPIC from "../src/image/TeamDeathMatchPIC.jpg";
 import { SlArrowLeft } from "react-icons/sl";
+import './Overview.css'
 
 
 
@@ -42,16 +43,16 @@ const Overview = () => {
           <p className="italic font-bold text-center bg-[#FF9737] h-[31px] w-[200px] rounded-md text-white mt-10 ml-28 hover:bg-[#ff7a37] hover:rounded-md p-1">  JOIN OUR COMMUNITY</p>
         </div>
         <div className="mt-20">
-          <img src={HeadHero} className="" alt="" width="800px" />
+          <img src={HeadHero} className="hover:scale-110 transition duration-50" alt="" width="800px" />
         </div>
       </div>
     </div>
 
 
     {/* Heroes/Map */}
-    <div className='bg-[#DDF2FD] grid grid-cols-2'>
-      <img src={HeoresMenu} className="" alt=""  />
-      <img src={MapMenu} className="" alt=""  />
+    <div className=' bg-[#DDF2FD] grid grid-cols-2 '>
+      <div className='hover:scale-110 transition duration-50 hover:shadow-2xl'><img src={HeoresMenu} className="" alt=""  /></div>
+      <div className='hover:scale-110 transition duration-50 hover:shadow-2xl'><img src={MapMenu} className="" alt=""  /></div>
     </div>
 
     {/* GAME MODES */}
