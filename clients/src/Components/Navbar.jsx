@@ -5,21 +5,22 @@ import {AiOutlineSearch} from 'react-icons/ai';
 import {AiOutlineDown} from 'react-icons/ai';
 import { MapsDropdown } from "./MapsDropdown";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 // import { navitems } from "./Navitems";
 // import { DropdowmMenu } from "./DropdowmMen";
+import { UserContext } from '../contexts/UserContext';
 
 export default function Navbar(){
-    const [username, setUsername] = useState(null);
+
+    const {setUserInfo, userInfo} = useContext(UserContext);
 
     useEffect(() => {
         fetch('http://localhost:3000/profile', {
             credentials: 'include',
         }).then(response => {
             response.json().then(userInfo => {
-                setUsername(userInfo.username);
+                setUserInfo(userInfo);
             })
         });
     }, [])
@@ -30,9 +31,10 @@ export default function Navbar(){
             credentials: 'include',
             method: 'POST',
         })
-        setUsername(null);
+        setUserInfo(null);
     }
 
+    const username = userInfo?.username;
     
     return (
     <>

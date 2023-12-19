@@ -12,6 +12,8 @@ import HeroesSupport from './HeroesSupport'
 import Community from './Community'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
+import CreatePost from './pages/CreatePost'
+import { UserContextProvider } from './contexts/UserContext';
 
 
 
@@ -24,21 +26,25 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <Navbar /> 
-      <Routes>
-        <Route path="/" element={<Overview />} />
-        <Route path="/Heroes" element={<Heroes />} />
-        <Route path="/Maps" element={<Maps />} />
-        <Route path='/HeroesTank' element={<HeroesTank />} />
-        <Route path='/HeroesDamage' element={<HeroesDamage />} />
-        <Route path='/HeroesSupport' element={<HeroesSupport />} />
-        <Route path='/Community' element={<Community />} />
-        <Route path="/Community/Login" element={<LoginPage />} />
-        <Route path="/Community/Register" element={<RegisterPage />} />
-      </Routes>
-      <Followus />
-    </>
+    <UserContextProvider>
+      <>
+        <Navbar /> 
+        <Routes>
+          <Route path="/" element={<Overview />} />
+          <Route path="/Heroes" element={<Heroes />} />
+          <Route path="/Maps" element={<Maps />} />
+          <Route path='/HeroesTank' element={<HeroesTank />} />
+          <Route path='/HeroesDamage' element={<HeroesDamage />} />
+          <Route path='/HeroesSupport' element={<HeroesSupport />} />
+          <Route path='/Community' element={<Community />} />
+          <Route path="/Community/Login" element={<LoginPage />} />
+          <Route path="/Community/Register" element={<RegisterPage />} />
+          <Route path="/Community/Create" element={<CreatePost />} />
+        </Routes>
+        <Followus />
+      </>
+    </UserContextProvider>
+    
   ) 
 }
 
