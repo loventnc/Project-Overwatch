@@ -48,26 +48,43 @@ export default function EditPost(){
         return <Navigate to={'/community/posts/'+id} />
     }
         return(
-        <div>
-        <form onSubmit={updatePost}>
-            <input type="title" 
-                placeholder={'title'} 
-                value={title} 
-                onChange={ev => setTitile(ev.target.value)}/>
-
-            <input type="summary" 
-                placeholder={'summary'}
+            <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-md">
+            <form onSubmit={updatePost} className="space-y-4">
+              <input
+                type="text"
+                placeholder="Title"
+                value={title}
+                onChange={(ev) => setTitile(ev.target.value)}
+                className="w-full p-3 border border-gray-300 rounded-md"
+              />
+          
+              <input
+                type="text"
+                placeholder="Summary"
                 value={summary}
-                onChange={ev => setSummary(ev.target.value)}/>
-
-            <input type="file" 
-                onChange={ev => setFiles(ev.target.files)}
-            />
-
-            <Editor onChange={setContent} value={content}/>
-
-            <button style={{marginTop:'5px'}} type="submit">Update Post</button>
-        </form>
-        </div>
+                onChange={(ev) => setSummary(ev.target.value)}
+                className="w-full p-3 border border-gray-300 rounded-md"
+              />
+          
+              <label className="w-full block">
+                <span className="text-gray-700">Choose a File</span>
+                <input
+                  type="file"
+                  onChange={(ev) => setFiles(ev.target.files)}
+                  className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
+                />
+              </label>
+          
+              <Editor value={content} onChange={setContent} />
+          
+              <button
+                type="submit"
+                className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+              >
+                Update Post
+              </button>
+            </form>
+          </div>
+          
         )
 }

@@ -45,22 +45,59 @@ export default function PostPage(){
 
 
     return (
-        <div>
-            <p>{postInfo.title}</p>
-            <div className="flex"><ReactTimeAgo date={postInfo.createdAt} locale="en-US" timeStyle="round"/></div>
-            <p>by @{postInfo.author.username}</p>
-            {userInfo.id === postInfo.author._id && (
-                    <>
+        // <div className='flex w-screen'>
+        //     <div>
+        //         <div className='flex justify-center w-1/2' >
+        //             <div className='mt-16'>
+        //                 <div className='text-6xl font-bold'>
+        //                     {postInfo.title}
+        //                 </div>
+        //                 <div className="flex justify-center mt-5">
+        //                     <p>by @{postInfo.author.username}</p>
+        //                     
+        //                     
+        //                 </div>
+
+                        
+        //                 
+        //             </div>
+        //         </div>
+
+
+        //         <div className='w-1/2'>
+        //             <img src = {`http://localhost:3000/${postInfo.cover}`} alt="" />
+        //             <div className="whitespace-normal break-words" dangerouslySetInnerHTML={{__html:postInfo.content}}/> 
+        //         </div>
+
+        //     </div>
+        // </div>
+        <div className="flex flex-col items-center w-screen p-6 mt-10 bg-[#DDF2FD]">
+            <div className='text-5xl font-bold mb-4'>
+                {postInfo.title}
+            </div>
+            <div className='flex text-gray-600'>
+                <span>{postInfo.author.username}</span>
+                <span className="mx-2">·</span>
+                <ReactTimeAgo date={postInfo.createdAt} locale="en-US" timeStyle="round" />
+            </div>
+            <div className='mt-3 flex justify-center gap-3'>
+                {userInfo.id === postInfo.author._id && (
+                <>
                     <Link to={`/community/edit/${postInfo._id}`}>
-                        <p>edit this post</p>
+                    <button className='btn btn-success'>Edit this post</button>
                     </Link>
-                    <button onClick={handleDelete}>Delete this post</button>
-                    </>
+                    <button onClick={handleDelete} className='btn btn-warning'>Delete this post</button>
+                </>
                 )}
-            <img src = {`http://localhost:3000/${postInfo.cover}`} alt="" />
-            
-            <div dangerouslySetInnerHTML={{__html:postInfo.content}}/> 
+            </div>
+            <div className='w-full md:w-1/2 mt-6'>
+                <img src={`http://localhost:3000/${postInfo.cover}`} alt="" className="w-full h-auto rounded-lg shadow" />
+            </div>
+            <div className="mt-6 max-w-prose whitespace-normal break-words">
+                <div dangerouslySetInnerHTML={{ __html: postInfo.content }} />
+            </div>
         </div>
 
+        
     )
 }

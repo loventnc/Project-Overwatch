@@ -15,13 +15,13 @@ function Followus() {
             </aside> 
             <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
             <div className='flex flex-row justify-center text-white text-[30px] pt-2 gap-5'>
-                        <Link to="https://www.facebook.com/OverwatchSEA/?brand_redir=292929874198161">
+                        <Link to="https://www.facebook.com/OverwatchSEA/?brand_redir=292929874198161" target="blank">
                             <RiFacebookCircleFill />
                         </Link>
-                        <Link to='https://www.instagram.com/playoverwatch/'>
+                        <Link to='https://www.instagram.com/playoverwatch/' target="blank">
                             <RiInstagramFill />
                         </Link>
-                        <Link to='https://www.youtube.com/PlayOverwatch'>
+                        <Link to='https://www.youtube.com/PlayOverwatch' target="blank">
                             <RiYoutubeFill />
                         </Link>
                     </div>

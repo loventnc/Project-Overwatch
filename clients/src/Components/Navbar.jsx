@@ -133,9 +133,9 @@ export default function Navbar(){
 
                 {username && (
                             <>
-                                <span>Hello, {username}!</span>
-                                <Link to ="/community/create">Create new post</Link>
-                                <a onClick={logout}>Logout</a>
+                                <span className="badge badge-primary badge-outline">Hello, {username}!</span>
+                                <Link to ="/community/create" className="btn btn-outline btn-info">Create new post</Link>
+                                <a onClick={logout} className="text-blue-500 hover:underline">Logout</a>
                             </>
                 )}
                 {!username && (
@@ -145,7 +145,7 @@ export default function Navbar(){
                             <p className="pt-3.5 ml-1 text-xs"><AiOutlineDown/></p>
                         </div>
                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-box w-52">
-                            <li className="bg-[#218FFE] rounded-md text-white text-center"><NavLink to="/community/login">Log in</NavLink></li>
+                            <li className="bg-[#99ccff] rounded-md text-white text-center"><NavLink to="/community/login">Log in</NavLink></li>
                             <li>
                                 <NavLink to="/community/register">Sign Up</NavLink>
                             </li>
@@ -158,8 +158,8 @@ export default function Navbar(){
 
 
                     
-                    <li className="bg-[#FF9737] h-[33px] w-[100px] rounded-md text-white text-center hover:bg-[#ff7a37] hover:rounded-md p-1">
-                    <NavLink to='https://download.battle.net/en-us?product=ow&blzcmp=ow_gamesite'>Play Now</NavLink>
+                    <li className="btn btn-warning bg-">
+                    <NavLink to='https://download.battle.net/en-us?product=ow&blzcmp=ow_gamesite' target="blank">Play Now</NavLink>
                     </li>
                     </ul>
             </div>
