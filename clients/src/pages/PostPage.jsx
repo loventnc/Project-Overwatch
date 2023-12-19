@@ -17,6 +17,30 @@ export default function PostPage(){
             })
     },[])
 
+    const handleDelete = async () => {
+        const isConfirmed = window.confirm('Are you sure you want to delete this post?');
+    
+        if (!isConfirmed) {
+            return; // If not confirmed, do nothing
+        }
+    
+        try {
+            const response = await fetch(`http://localhost:3000/community/posts/${postInfo._id}`, {
+                method: 'DELETE',
+            });
+    
+            if (response.ok) {
+                // Redirect to the post list or another page after successful deletion
+                window.location.href = '/community/posts';
+            } else {
+                console.error('Failed to delete post');
+            }
+        } catch (error) {
+            console.error('Error deleting post', error);
+        }
+    };
+    
+    
     if (!postInfo) return '';
 
 
@@ -30,9 +54,7 @@ export default function PostPage(){
                     <Link to={`/community/edit/${postInfo._id}`}>
                         <p>edit this post</p>
                     </Link>
-                    <Link to={`/community/delete/${postInfo._id}`}>
-                        <p>delete this post</p>
-                    </Link>
+                    <button onClick={handleDelete}>Delete this post</button>
                     </>
                 )}
             <img src = {`http://localhost:3000/${postInfo.cover}`} alt="" />

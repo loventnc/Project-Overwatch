@@ -12,6 +12,7 @@ const fs = require('fs');
 const Post = require('./models/post');
 
 
+
 // const bcrypt = require('bcrypt');
 // const saltRounds = 10;
 // const myPlaintextPassword = 's0/\/\P4$$w0rD';
@@ -142,6 +143,29 @@ app.get('/community/posts/:id', async (req,res) => {
     const postDoc = await Post.findById(id).populate('author', ['username']);
     res.json(postDoc);
 });
+
+
+app.delete('/community/posts/:id', async (req, res) => {
+    const { id } = req.params;
+
+    try {
+        // Implement logic to delete the post with the given ID
+        const deletedPost = await Post.findByIdAndDelete(id);
+
+        if (deletedPost) {
+            // Optionally, you can also delete the associated cover file if needed
+            // fs.unlinkSync(deletedPost.cover);
+
+            res.json({ message: 'Post deleted successfully' });
+        } else {
+            res.status(404).json({ error: 'Post not found' });
+        }
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+  
 
 
 app.listen(PORT, () => {
