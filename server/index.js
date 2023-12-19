@@ -73,7 +73,7 @@ app.post('/logout', (req,res) => {
     res.cookie('token', '').json('ok');
 });
 
-app.post('/posts', uploadMiddleware.single('file'), async (req,res) => {
+app.post('/community/posts', uploadMiddleware.single('file'), async (req,res) => {
     const {originalname, path} = req.file;
     const parts = originalname.split('.');
     const ext = parts[parts.length - 1];
@@ -95,8 +95,12 @@ app.post('/posts', uploadMiddleware.single('file'), async (req,res) => {
     });
 });
 
+app.put('/community/posts',uploadMiddleware.single('file'), async (req,res) => {
+    res.json(req.file);
+})
 
-app.get('/posts', async (req,res) => {
+
+app.get('/community/posts', async (req,res) => {
     res.json(
         await Post.find()
         .populate('author', ['username'])
@@ -104,6 +108,14 @@ app.get('/posts', async (req,res) => {
         .limit(20)
     );
 })
+
+
+app.get('/community/posts/:id', async (req,res) => {
+    const {id} = req.params;
+    const postDoc = await Post.findById(id).populate('author', ['username']);
+    res.json(postDoc);
+});
+
 
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);

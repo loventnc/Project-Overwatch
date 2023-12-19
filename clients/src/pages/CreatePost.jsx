@@ -1,24 +1,7 @@
-import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
-
-const modules = {
-  toolbar: [
-    [{ 'header': [1, 2, false] }],
-    ['bold', 'italic', 'underline', 'strike', 'blockquote'],
-    [{'list': 'ordered'}, {'list': 'bullet'}, {'indent': '-1'}, {'indent': '+1'}],
-    ['link', 'image'],
-    ['clean']
-  ]
-};
-
-const formats = [
-  'header',
-  'bold', 'italic', 'underline', 'strike', 'blockquote',
-  'list', 'bullet', 'indent',
-  'link', 'image'
-];
+import Editor from '../Editor';
 
 export default function CreatePost() {
   const [title, setTitile] = useState('');
@@ -36,7 +19,7 @@ export default function CreatePost() {
 
     ev.preventDefault();
 
-    const response = await fetch('http://localhost:3000/posts', {
+    const response = await fetch('http://localhost:3000/community/posts', {
       method: 'POST',
       body: data,
       credentials: 'include',
@@ -67,12 +50,7 @@ export default function CreatePost() {
                onChange={ev => setFiles(ev.target.files)}
         />
 
-        <ReactQuill 
-          modules={modules} 
-          formats={formats} 
-          value={content} 
-          onChange={newValue => setContent(newValue)}
-        />
+        <Editor value={content} onChange={setContent}/>
 
         <button style={{marginTop:'5px'}} type="submit">Create Post</button>
       </form>

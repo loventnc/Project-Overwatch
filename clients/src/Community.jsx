@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 const Community = () => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:3000/posts').then(response => {
+    fetch('http://localhost:3000/community/posts').then(response => {
       response.json().then(posts => {
         setPosts(posts)
       })
