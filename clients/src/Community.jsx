@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import { useEffect, useState } from 'react';
 
 
+
 const Community = () => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {

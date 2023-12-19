@@ -19,6 +19,7 @@ import { UserContextProvider } from './contexts/UserContext';
 
 import {Routes, Route} from 'react-router-dom'
 import Followus from './Components/Followus'
+// import PostPage from './pages/PostPage'
 
 // import DropdownMenu from "./DropdownMenu";
 
@@ -40,6 +41,7 @@ function App() {
           <Route path="/Community/Login" element={<LoginPage />} />
           <Route path="/Community/Register" element={<RegisterPage />} />
           <Route path="/Community/Create" element={<CreatePost />} />
+          {/* <Route path="Posts/:id" element={<PostPage />} /> */}
         </Routes>
         <Followus />
       </>

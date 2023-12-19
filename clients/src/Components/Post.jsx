@@ -1,22 +1,33 @@
-export default function Post({title,summary,cover,content,createdAt}){
+import ReactTimeAgo from 'react-time-ago'
+import { Link } from 'react-router-dom'
+
+export default function Post({_id,title,summary,cover,content,createdAt,author}){
+
+    const createdAtDate = new Date(createdAt);
+
     return (
         <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
-          <img
-            className="rounded-t-lg"
-            src="../src/Image/Ashe.jpg"
-            alt=""
-          />
+          <Link to={``}>
+            <img
+              className="rounded-t-lg"
+              src={'http://localhost:3000/'+cover}
+              alt=""
+            />
+          </Link>
+          
         </a>
         <div className="p-5">
           <a href="#">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              {title}
+              <Link to={``}>
+                {title}
+              </Link>
             </h5>
           </a>
 
           <p className="mb-3 font-xs text-gray-700 dark:text-gray-400">
-            Username
+            {author.username}
           </p>
           
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -44,7 +55,8 @@ export default function Post({title,summary,cover,content,createdAt}){
                 />
                 </svg>
             </a>
-            <div className="flex ">{createdAt}</div>
+            <div className="flex"><ReactTimeAgo date={createdAtDate} locale="en-US" timeStyle="round"/></div>
+
         </div>
           
         </div>
