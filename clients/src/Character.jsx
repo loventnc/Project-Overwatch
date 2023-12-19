@@ -98,7 +98,7 @@ const Character = () => {
             <div className="flex   py-5 ">
                 {data.abilities.map((ability, index) => {
                 return (
-                        <div className="flex">
+                        <div className="flex hover:scale-110 transition duration-50 hover:shadow-2xl">
                             <video autoPlay muted loop src={ability.video.link.mp4} className="" width="1000px"></video>
                         </div>
                         )
