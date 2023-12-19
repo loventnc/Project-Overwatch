@@ -39,7 +39,7 @@ const Character = () => {
             {/* Content01 */}
             {data && (
                     <div className="flex flex-row bg-cover bg-center h-screen" style={{ backgroundImage: 'url(https://blizzardwatch.com/wp-content/uploads/2018/10/cg-8a.jpg)' }}>
-                        <div className="ml-32 pt-16">
+                        <div className="ml-32 pt-10">
                                 <h1 className="text-white text-[50px] font-bold ">{data.name}</h1>
                                 <p className="text-white text-[20px] w-6/12 mt-3 font-semibold">{data.description}</p>
                             <div className="flex flex-col justify-start">
