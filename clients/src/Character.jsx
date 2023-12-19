@@ -77,20 +77,22 @@ const Character = () => {
             )}
             
             {/* Content02 */}
-            <div className="flex flex-wrap justify-center py-5">
-                {data.abilities.map((ability, index) => (
-                    <div key={index} className="m-4 text-center">
-                            <div className="w-24 h-24 mx-auto mb-3">
-                                <img src={ability.icon} className="rounded-full bg-slate-300" alt={ability.name} width="100px" />
+            <div>
+                <div className="flex flex-wrap justify-center py-5">
+                    {data.abilities.map((ability, index) => (
+                        <div key={index} className="m-4 text-center">
+                                <div className="w-24 h-24 mx-auto mb-3">
+                                    <img src={ability.icon} className="rounded-full bg-slate-300" alt={ability.name} width="100px" />
+                                </div>
+                            <p className="text-lg font-semibold mb-2">{ability.name}</p>
+                            <div className="mb-3">
+                                <p className="text-md bg-white rounded-md p-2">{ability.description}</p>
                             </div>
-                        <p className="text-lg font-semibold mb-2">{ability.name}</p>
-                        <div className="mb-3">
-                            <p className="text-md bg-white rounded-md p-2">{ability.description}</p>
+                            {/* Uncomment the line below if you have a video thumbnail */}
+                            {/* <img src={ability.video.thumbnail} alt="Video Thumbnail" /> */}
                         </div>
-                        {/* Uncomment the line below if you have a video thumbnail */}
-                        {/* <img src={ability.video.thumbnail} alt="Video Thumbnail" /> */}
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
     </div>
             <div className="flex   py-5 ">
