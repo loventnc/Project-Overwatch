@@ -128,7 +128,7 @@ export default function Navbar(){
                 
             <div className="flex items-center">
                     <ul className="flex justify-between gap-14 text-[18px] rounded-full">
-                    <p className="mt-1 hover:bg-[#ece9e9] hover:rounded-md p-1"><AiOutlineSearch/></p>
+                    
 
 
                 {username && (
@@ -145,8 +145,7 @@ export default function Navbar(){
                             <p className="pt-3.5 ml-1 text-xs"><AiOutlineDown/></p>
                         </div>
                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-box w-52">
-                            <li className="bg-[#218FFE] h-[33px] w-[100px] rounded-md text-white text-center"><NavLink to="/community/login">Log in</NavLink></li>
-                            <li className=""><a>Account Setting</a></li>
+                            <li className="bg-[#218FFE] rounded-md text-white text-center"><NavLink to="/community/login">Log in</NavLink></li>
                             <li>
                                 <NavLink to="/community/register">Sign Up</NavLink>
                             </li>
