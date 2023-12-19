@@ -13,9 +13,9 @@ import Flashpoint from "../src/image/Flashpoint.png";
 import Hybrid from "../src/image/Hybrid.png";
 import Push from "../src/image/Push.png";
 import TeamDeathMatch from "../src/image/TeamDeathMatch.png";
-import { capturetheflagMaps } from './capturetheflagMaps.js';
+import { deadmatchMaps } from './deadmatchMaps.js';
 
-const MapsCapture = () => {
+const MapsDeathmatch = () => {
 
 
     return (
@@ -105,7 +105,7 @@ const MapsCapture = () => {
             {/* Render maps data */}
             <div className='flex justify-center items-center bg-[#DDF2FD]'>
                 <div className='grid grid-cols-4  gap-14 p-10'>
-                    {capturetheflagMaps.map((map, index) => (
+                    { deadmatchMaps.map((map, index) => ( 
                         <div key={index} className='bg-white h-[220px] w-[180px] rounded-none text-center border-4 border-white hover:scale-110 transition duration-50 hover:shadow-2xl'>
                             <Link to={`/Maps/${map.name.toLowerCase()}`}>
                                 <img src={map.screenshot} className="flex justify-center items-center bg-black" alt={map.name} width="180px" />
@@ -119,4 +119,4 @@ const MapsCapture = () => {
     )
 }
 
-export default MapsCapture
+export default MapsDeathmatch

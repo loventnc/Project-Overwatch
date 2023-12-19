@@ -1,4 +1,4 @@
-export const deathmatchMaps = [
+export const deadmatchMaps = [
   {
     name: "Château Guillard",
     screenshot:

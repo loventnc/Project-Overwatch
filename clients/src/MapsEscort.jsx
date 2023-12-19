@@ -13,9 +13,9 @@ import Flashpoint from "../src/image/Flashpoint.png";
 import Hybrid from "../src/image/Hybrid.png";
 import Push from "../src/image/Push.png";
 import TeamDeathMatch from "../src/image/TeamDeathMatch.png";
-import { capturetheflagMaps } from './capturetheflagMaps.js';
+import { escortMaps } from './escortMaps.js';
 
-const MapsCapture = () => {
+const MapsEscort = () => {
 
 
     return (
@@ -32,7 +32,7 @@ const MapsCapture = () => {
                     <div className='flex flex-col gap-4'>
                         <div className='flex flex-row items-center gap-10'> 
                             <Link to = "/MapsAssault">
-                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold rounded-md hover:scale-110 transition duration-50 hover:shadow-xl'>
+                                <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold rounded-md hover:scale-110 transition duration-50 hover:shadow-xl '>
                                     <img src="https://overfast-api.tekrop.fr/static/gamemodes/assault-icon.svg" className="" alt="" width="40px" />
                                     <h1 className='text-[22px] pt-1 pl-2 text-white'>Assault</h1>
                                 </div>
@@ -105,7 +105,7 @@ const MapsCapture = () => {
             {/* Render maps data */}
             <div className='flex justify-center items-center bg-[#DDF2FD]'>
                 <div className='grid grid-cols-4  gap-14 p-10'>
-                    {capturetheflagMaps.map((map, index) => (
+                    { escortMaps.map((map, index) => ( 
                         <div key={index} className='bg-white h-[220px] w-[180px] rounded-none text-center border-4 border-white hover:scale-110 transition duration-50 hover:shadow-2xl'>
                             <Link to={`/Maps/${map.name.toLowerCase()}`}>
                                 <img src={map.screenshot} className="flex justify-center items-center bg-black" alt={map.name} width="180px" />
@@ -119,4 +119,4 @@ const MapsCapture = () => {
     )
 }
 
-export default MapsCapture
+export default MapsEscort

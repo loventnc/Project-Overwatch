@@ -76,16 +76,36 @@ export default function Navbar(){
                                 <li>
                                     <NavLink to="Maps">All</NavLink>
                                 </li>
-                                <li><a>Assault</a></li>
-                                <li><a>CaptureFlag</a></li>
-                                <li><a>Control</a></li>
-                                <li><a>Deathmatch</a></li>
-                                <li><a>Elimination</a></li>
-                                <li><a>Escort</a></li>
-                                <li><a>Flashpoint</a></li>
-                                <li><a>Hybrid</a></li>
-                                <li><a>Push</a></li>
-                                <li><a>TeamDeathMatch</a></li>
+                                <li>
+                                    <NavLink to ="/MapsAssault">Assault</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to = "/MapsCapture">CaptureFlag</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to ="/MapsControl">Control</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/MapsDeathmatch">Deathmatch</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to ="/MapsElimination">Elimination</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/MapsEscort">Escort</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to ="/MapsFlashpoint">Flashpoint</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to ="/MapsHybrid">Hybrid</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to ="/MapsPush">Push</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to ="/MapsTeamDeathMatch">TeamDeathMatch</NavLink>
+                                </li>
                                 {/* {MapsDropdown .map((MapDropdown, index) => {
                                     return(
                                         <>
