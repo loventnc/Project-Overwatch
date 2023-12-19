@@ -53,7 +53,7 @@ console.log(HsSupport);
       <div className='flex justify-center items-center'>
         <div className='grid grid-cols-6 gap-14 p-10'>
           {HsSupport.map((hero, index) => (
-            <div key={index} className='bg-white h-[220px] w-[180px] rounded-none text-center border-4 border-white'>
+            <div key={index} className='bg-white h-[220px] w-[180px] rounded-none text-center border-4 border-white hover:scale-110 transition duration-50 hover:shadow-2xl'>
               <a href={`/heroes/${hero.name.toLowerCase()}`}>
                 <img src={hero.img} className="flex justify-center items-center bg-black" alt={hero.name} width="180px" />
                 <h1 className='flex justify-center items-center pt-2 text-[18px] font-medium'>{hero.name}</h1>
