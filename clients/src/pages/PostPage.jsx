@@ -26,10 +26,15 @@ export default function PostPage(){
             <div className="flex"><ReactTimeAgo date={postInfo.createdAt} locale="en-US" timeStyle="round"/></div>
             <p>by @{postInfo.author.username}</p>
             {userInfo.id === postInfo.author._id && (
-                <Link to={`/community/edit/${postInfo._id}`}>
-                    <p>edit this post</p>
-                </Link>
-            )}
+                    <>
+                    <Link to={`/community/edit/${postInfo._id}`}>
+                        <p>edit this post</p>
+                    </Link>
+                    <Link to={`/community/delete/${postInfo._id}`}>
+                        <p>delete this post</p>
+                    </Link>
+                    </>
+                )}
             <img src = {`http://localhost:3000/${postInfo.cover}`} alt="" />
             
             <div dangerouslySetInnerHTML={{__html:postInfo.content}}/> 
