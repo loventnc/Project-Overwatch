@@ -115,6 +115,7 @@ export default function Navbar(){
 
                 {username && (
                             <>
+                                <span>Hello, {username}!</span>
                                 <Link to ="/community/create">Create new post</Link>
                                 <a onClick={logout}>Logout</a>
                             </>

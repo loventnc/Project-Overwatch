@@ -20,7 +20,7 @@ import { UserContextProvider } from './contexts/UserContext';
 import {Routes, Route} from 'react-router-dom'
 import Followus from './Components/Followus'
 import PostPage from './pages/PostPage'
-// import EditPost from './pages/EditPost'
+import EditPost from './pages/EditPost'
 
 // import DropdownMenu from "./DropdownMenu";
 
@@ -43,7 +43,7 @@ function App() {
           <Route path="/Community/Register" element={<RegisterPage />} />
           <Route path="/Community/Create" element={<CreatePost />} />
           <Route path="/Community/Posts/:id" element={<PostPage />} />
-          {/* <Route path="/Community/Edit/:id" element={<EditPost />} /> */}
+          <Route path="/Community/Edit/:id" element={<EditPost />} />
         </Routes>
         <Followus />
       </>

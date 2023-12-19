@@ -1,11 +1,11 @@
-import {useEffect, useState} from 'react'
+import {useEffect, useState, useContext} from 'react'
 import {useParams} from 'react-router-dom'
 import ReactTimeAgo from 'react-time-ago'
 import {Link} from 'react-router-dom'
+import { UserContext } from '../contexts/UserContext'
 
 export default function PostPage(){
-    
-    
+    const {userInfo} = useContext(UserContext)
     const [postInfo, setPostInfo] = useState(null)
     const {id} = useParams()
     useEffect(() => {
@@ -25,9 +25,11 @@ export default function PostPage(){
             <p>{postInfo.title}</p>
             <div className="flex"><ReactTimeAgo date={postInfo.createdAt} locale="en-US" timeStyle="round"/></div>
             <p>by @{postInfo.author.username}</p>
-            <Link to={`/community/edit/${postInfo._id}`}>
-                <p>edit this post</p>
-            </Link>
+            {userInfo.id === postInfo.author._id && (
+                <Link to={`/community/edit/${postInfo._id}`}>
+                    <p>edit this post</p>
+                </Link>
+            )}
             <img src = {`http://localhost:3000/${postInfo.cover}`} alt="" />
             
             <div dangerouslySetInnerHTML={{__html:postInfo.content}}/> 
