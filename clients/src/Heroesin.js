@@ -23,6 +23,7 @@ export const Heroesin = [
         imgoverviews01 : "https://cdn.mos.cms.futurecdn.net/XMH8VeStCPmMnzDL9eKqgn.jpg",
         imgoverviews02 : "https://dotesports.com/wp-content/uploads/2018/08/12050041/ow_ana_3p_006_png_jpgcopy.jpg",
         imgoverviews03 : "https://oyster.ignimgs.com/mediawiki/apis.ign.com/overwatch-2/2/2b/OW2_Ana_2.jpg?width=1280",
+        
     },
     {
         name: "ASHE",
