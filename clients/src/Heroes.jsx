@@ -30,9 +30,9 @@ const Heroes = () => {
               </Link>
             </h1>
           </div>
-          <div className='flex flex-row justify-center bg-white h-[40px] w-[150px] font-semibold'>
+          <div className='flex flex-row justify-center bg-white h-[40px] w-[150px] font-semibold '>
             <img src={DPS} className="" alt="" width="40px" />
-            <h1 className='text-[22px] pt-1 pl-2'>
+            <h1 className='text-[22px] pt-1 pl-2 '>
               <Link to='/HeroesDamage'>
                 DAMAGE
               </Link>
@@ -73,3 +73,16 @@ const Heroes = () => {
 }
 
 export default Heroes
+
+      // <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-white">
+      //       <img src={Tank} className="" alt="" width="40px" />
+      //       <Link to='/HeroesTank'>TANKS</Link>
+      //     </button>
+      //     <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-white">
+      //       <img src={DPS} className="" alt="" width="40px" />
+      //       <Link to='/HeroesDamage'>DAMAGE</Link>
+      //     </button>
+      //     <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-white">
+      //       <img src={Support} className="" alt="" width="40px" />
+      //       <Link to='/HeroesSupport'>SUPPORT</Link>
+      // </button>

@@ -16,12 +16,12 @@ console.log(HsDamage);
       </div>
     </div>
     {/* roles */}
-    <div className='bg-[#DDF2FD]'>
+    <div className='bg-[#DDF2FD] '>
       <div className='flex flex-col items-center pt-10'>
         <div className='flex flex-row gap-10'>
           <div className='flex flex-row justify-center bg-white h-[40px] w-[130px] font-semibold'>
             <img src={Tank} className="" alt="" width="40px" />
-            <h1 className='text-[22px] pt-1 pl-2'>
+            <h1 className='text-[22px] pt-1 pl-2 '>
               <Link to='/HeroesTank'>
                 TANKS
               </Link>
@@ -31,7 +31,7 @@ console.log(HsDamage);
             <img src={DPS} className="" alt="" width="40px" />
             <h1 className='text-[22px] pt-1 pl-2'>
               <Link to='/HeroesDamage'>
-                Damage
+                DAMAGE
               </Link>
             </h1>
           </div>

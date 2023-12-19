@@ -8,6 +8,7 @@ import Heroes from './Heroes'
 import Signup from './Signup'
 import Login from './Login'
 import Maps from './Maps'
+import MapsDetail from './MapsDetail'
 import HeroesTank from './HeroesTank'
 import HeroesDamage from './HeroesDamage'
 import HeroesSupport from './HeroesSupport'
@@ -28,6 +29,7 @@ function App() {
         <Route path="/" element={<Overview />} />
         <Route path="/Heroes" element={<Heroes />} />
         <Route path="/Maps" element={<Maps />} />
+        <Route path="/Maps/:detail" element={<MapsDetail />} />
         <Route path='/Signup' element={<Signup />} />
         <Route path='/Login' element={<Login />}/>
         <Route path='/HeroesTank' element={<HeroesTank />} />

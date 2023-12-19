@@ -41,7 +41,7 @@ const Maps = () => {
         </div>
         {/* roles */}
         <div className='bg-[#DDF2FD]'>
-            <div className='flex flex-col items-center pt-4'>
+            <div className='flex flex-col items-center pt-10'>
                 <div className='flex flex-col gap-4'>
                     <div className='flex flex-row items-center gap-10'> 
                         <div className='flex flex-row justify-center bg-black h-[40px] w-[180px] font-semibold'>
@@ -100,7 +100,7 @@ const Maps = () => {
             <div className='grid grid-cols-4  gap-14 p-10'>
                 {mapsData.map((map, index) => (
                     <div key={index} className='bg-white h-[210px] w-[270px] rounded-none text-center border-4 border-white'>
-                        <Link to={`/maps/${map.name.toLowerCase()}`}>
+                        <Link to={`/Maps/${map.name.toLowerCase()}`}>
                             <img
                                 src={map.screenshot}
                                 className="flex justify-center items-center"
