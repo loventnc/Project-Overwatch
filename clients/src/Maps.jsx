@@ -121,7 +121,7 @@ const Maps = () => {
             <div className='grid grid-cols-4  gap-14 p-10'>
                 {mapsData.map((map, index) => (
                     <div key={index} className='bg-white h-[210px] w-[270px] rounded-none text-center border-4 border-white hover:scale-110 transition duration-50 hover:shadow-2xl'>
-                        <Link to={`/Maps/${map.name.toLowerCase()}`}>
+                        <Link to={`/Maps/${(map.name.toLowerCase()).replaceAll(" ", "-").replaceAll(".", "").replace("ö", "o")}`}>
                             <img
                                 src={map.screenshot}
                                 className="flex justify-center items-center"

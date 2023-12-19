@@ -27,9 +27,14 @@ const MapDetails = () => {
     };
     
     // ...
+    function capitalizeEachWord(str) {
+        return str.replace(/\w\S*/g, function(txt) {
+          return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        });
+      }
     
-    const detailMap = data && data.find((map) => map.name === capitalize(detail));
-    console.log(detailMap);
+    const detailMap = data && data.find((map) => map.name === capitalizeEachWord(detail));
+    console.log(detail.replaceAll("-", " "));
 
     return (
         <>
