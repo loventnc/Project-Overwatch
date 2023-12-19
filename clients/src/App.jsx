@@ -14,7 +14,14 @@ import Community from './Community'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import CreatePost from './pages/CreatePost'
-import { UserContextProvider } from './contexts/UserContext';
+import { UserContextProvider } from './contexts/UserContext'
+import MapsDeathmatch from './MapsDeathmatch'
+import MapsElimination from './MapsElimination'
+import MapsEscort from './MapsEscort'
+import MapsFlashpoint from './MapsFlashpoint'
+import MapsHybrid from './MapsHybrid'
+import MapsPush from './MapsPush'
+import MapsTeamDeathMatch from './MapsTeamDeathMatch';
 
 
 import Character from './character'
@@ -54,6 +61,13 @@ function App() {
           <Route path="/Community/Create" element={<CreatePost />} />
           <Route path="/Community/Posts/:id" element={<PostPage />} />
           <Route path="/Community/Edit/:id" element={<EditPost />} />
+          <Route path='/MapsDeathmatch' element={<MapsDeathmatch />} />
+          <Route path='/MapsElimination' element={<MapsElimination />} />
+          <Route path='/MapsEscort' element={<MapsEscort />} />
+          <Route path='/MapsFlashpoint' element={<MapsFlashpoint />} />
+          <Route path='/MapsHybrid' element={<MapsHybrid />} />
+          <Route path='/MapsPush' element={<MapsPush />} />
+          <Route path='/MapsTeamDeathMatch' element={<MapsTeamDeathMatch />} />
         </Routes>
         <Followus />
       </>
