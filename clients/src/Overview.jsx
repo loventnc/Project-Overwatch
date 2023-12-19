@@ -64,66 +64,86 @@ const Overview = () => {
 
       {/* icons */}
       <div className='flex flex-row justify-center gap-10 pt-5'>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src="https://overfast-api.tekrop.fr/static/gamemodes/assault-icon.svg" className="bg-neutral-300 rounded-full w-[40px]"  alt=""  />
+        <Link to = "/MapsAssault">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src="https://overfast-api.tekrop.fr/static/gamemodes/assault-icon.svg" className="bg-neutral-300 rounded-full w-[40px]"  alt=""  />
+            </div>
+            <span className=''>Assault</span>
           </div>
-          <span className=''>Assault</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={CaptureFlag} className="bg-neutral-300 rounded-full" alt="" />
+        </Link>
+        <Link to = "/MapsCapture">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={CaptureFlag} className="bg-neutral-300 rounded-full" alt="" />
+            </div>
+            <span className=''>CaptureFlag</span>
           </div>
-          <span className=''>CaptureFlag</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={Control} className="bg-neutral-300 rounded-full" alt=""  />
+        </Link>
+        <Link to = "/MapsControl">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={Control} className="bg-neutral-300 rounded-full" alt=""  />
+            </div>
+            <span>Control</span>
           </div>
-          <span>Control</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={Deathmatch} className="bg-neutral-300 rounded-full" alt="" />
+        </Link>
+        <Link to = "/MapsDeathmatch">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={Deathmatch} className="bg-neutral-300 rounded-full" alt="" />
+            </div>
+            <span>Deathmatch</span>
           </div>
-          <span>Deathmatch</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={Elimination} className="bg-neutral-300 rounded-full" alt="" />
+        </Link>
+        <Link to = "/MapsElimination">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={Elimination} className="bg-neutral-300 rounded-full" alt="" />
+            </div>
+            <span>Elimination</span>
           </div>
-          <span>Elimination</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={Escort} className="bg-neutral-300 rounded-full" alt="" />
+        </Link>
+        <Link to = "/MapsEscort">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={Escort} className="bg-neutral-300 rounded-full" alt="" />
+            </div>
+            <span>Escort</span>
           </div>
-          <span>Escort</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={Flashpoint} className="bg-neutral-300 rounded-full" alt="" />
+        </Link>
+        <Link to = "/MapsFlashpoint">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={Flashpoint} className="bg-neutral-300 rounded-full" alt="" />
+            </div>
+            <span>Flashpoint</span>
           </div>
-          <span>Flashpoint</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={Hybrid} className="bg-neutral-300 rounded-full" alt="" />
+        </Link>
+        <Link to = "/MapsHybrid">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={Hybrid} className="bg-neutral-300 rounded-full" alt="" />
+            </div>
+            <span>Hybridg</span>
           </div>
-          <span>Hybridg</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={Push} className="bg-neutral-300 rounded-full" alt="" />
-          </div>  
-          <span>Push</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={TeamDeathMatch} className="bg-neutral-300 rounded-full" alt="" />
+        </Link>
+        <Link to = "/MapsPush">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={Push} className="bg-neutral-300 rounded-full" alt="" />
+            </div>  
+            <span>Push</span>
           </div>
-          <span>TeamDeathMatch</span>
-        </div>
+        </Link>
+        <Link to = "/MapsTeamDeathMatch">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={TeamDeathMatch} className="bg-neutral-300 rounded-full" alt="" />
+            </div>
+            <span>TeamDeathMatch</span>
+          </div>
+        </Link>
       </div>
     {/* pictures */}
     {/* <div className='flex justify-center mt-10' >
