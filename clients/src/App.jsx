@@ -15,6 +15,7 @@ import HeroesSupport from './HeroesSupport'
 import Character from './character'
 import MapAssault from './MapsAssault'
 import MapsCapture  from './MapsCapture'
+import MapsControl from './MapsControl'
 
 import {Routes, Route} from 'react-router-dom'
 import Followus from './Components/Followus'
@@ -39,6 +40,7 @@ function App() {
         <Route path='/Heroes/:name' element={<Character />} />
         <Route path='/MapsAssault' element={<MapAssault />} />
         <Route path='/MapsCapture' element={<MapsCapture />} />
+        <Route path='/MapsControl' element={<MapsControl />} />
       </Routes>
       <Followus />
     </>
