@@ -6,6 +6,10 @@ const bcrypt = require('bcryptjs');
 const User = require('./models/user');
 const jwt = require('jsonwebtoken');
 const cookieParser = require('cookie-parser');
+const multer = require('multer');
+const uploadMiddleware = multer({ dest: 'uploads/' })
+const fs = require('fs');
+const Post = require('./models/post');
 
 
 // const bcrypt = require('bcrypt');
@@ -69,6 +73,30 @@ app.post('/logout', (req,res) => {
     res.cookie('token', '').json('ok');
 });
 
+app.post('/posts', uploadMiddleware.single('file'), async (req,res) => {
+    const {originalname, path} = req.file;
+    const parts = originalname.split('.');
+    const ext = parts[parts.length - 1];
+    const newPath = path+'.'+ext
+    fs.renameSync(path, newPath)
+
+    const {title, summary, content} = req.body;
+    const postDoc = await Post.create({
+        title,
+        summary,
+        content,
+        cover: newPath,
+    })
+
+    res.json(postDoc);
+
+});
+
+
+app.get('/posts', async (req,res) => {
+    const posts = await Post.find();
+    res.json(posts);
+})
 
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);

@@ -115,7 +115,7 @@ export default function Navbar(){
 
                 {username && (
                             <>
-                                <Link to ="/create">Create new post</Link>
+                                <Link to ="/community/create">Create new post</Link>
                                 <a onClick={logout}>Logout</a>
                             </>
                 )}

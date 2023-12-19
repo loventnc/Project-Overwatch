@@ -36,7 +36,7 @@ function App() {
           <Route path='/HeroesTank' element={<HeroesTank />} />
           <Route path='/HeroesDamage' element={<HeroesDamage />} />
           <Route path='/HeroesSupport' element={<HeroesSupport />} />
-          <Route path='/Community' element={<Community />} />
+          <Route path='/Community/*' element={<Community />} />
           <Route path="/Community/Login" element={<LoginPage />} />
           <Route path="/Community/Register" element={<RegisterPage />} />
           <Route path="/Community/Create" element={<CreatePost />} />
