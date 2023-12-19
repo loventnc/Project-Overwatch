@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
@@ -13,23 +13,10 @@ import Flashpoint from "../src/image/Flashpoint.png";
 import Hybrid from "../src/image/Hybrid.png";
 import Push from "../src/image/Push.png";
 import TeamDeathMatch from "../src/image/TeamDeathMatch.png";
+import { capturetheflagMaps } from './capturetheflagMaps.js';
 
+const MapsCapture = () => {
 
-const Maps = () => {
-    const [mapsData, setMapsData] = useState([]);
-    
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await axios.get("https://overfast-api.tekrop.fr/maps");
-                setMapsData(response.data); // Assuming the API response is an array of maps data
-            }   catch (error) {
-                console.error("Error fetching maps data:", error);
-            }
-        };
-    
-        fetchData();
-    }, []);
 
     return (
         <>
@@ -39,8 +26,8 @@ const Maps = () => {
             {/* <h1 className='text-white text-[50px] font-semibold '>HEROES</h1> */}
             </div>
         </div>
-                {/* roles */}
-                <div className='bg-[#DDF2FD]'>
+            {/* roles */}
+            <div className='bg-[#DDF2FD]'>
                 <div className='flex flex-col items-center pt-10'>
                     <div className='flex flex-col gap-4'>
                         <div className='flex flex-row items-center gap-10'> 
@@ -114,31 +101,22 @@ const Maps = () => {
                     </div>
                 </div>
             </div>
-        
-            
-        {/* Render maps data */}
-        <div className='flex justify-center items-center bg-[#DDF2FD]'>
-            <div className='grid grid-cols-4  gap-14 p-10'>
-                {mapsData.map((map, index) => (
-                    <div key={index} className='bg-white h-[210px] w-[270px] rounded-none text-center border-4 border-white'>
-                        <Link to={`/Maps/${map.name.toLowerCase()}`}>
-                            <img
-                                src={map.screenshot}
-                                className="flex justify-center items-center"
-                                alt={map.name}
-                                width="270px"
-                                style={{ maxHeight: '210px', objectFit: 'cover' }}
-                            />
-                            <h1 className='flex justify-center items-center pt-2 text-[18px] font-medium'>{map.name}</h1>
-                        </Link>
-                    </div>
-                ))}
+                
+            {/* Render maps data */}
+            <div className='flex justify-center items-center bg-[#DDF2FD]'>
+                <div className='grid grid-cols-4  gap-14 p-10'>
+                    {capturetheflagMaps.map((map, index) => (
+                        <div key={index} className='bg-white h-[220px] w-[180px] rounded-none text-center border-4 border-white'>
+                            <Link to={`/Maps/${map.name.toLowerCase()}`}>
+                                <img src={map.screenshot} className="flex justify-center items-center bg-black" alt={map.name} width="180px" />
+                                <h1 className='flex justify-center items-center pt-2 text-[18px] font-medium'>{map.name}</h1>
+                            </Link>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
-
-        
         </>
     )
 }
 
-export default Maps
+export default MapsCapture

@@ -1,0 +1,51 @@
+export const hybridMaps = [
+  {
+    name: "Blizzard World",
+    screenshot: "https://overfast-api.tekrop.fr/static/maps/blizzard_world.jpg",
+    gamemodes: ["hybrid"],
+    location: "Irvine, California, United States",
+    country_code: "US",
+  },
+  {
+    name: "Numbani",
+    screenshot: "https://overfast-api.tekrop.fr/static/maps/numbani.jpg",
+    gamemodes: ["hybrid"],
+    location: "Numbani (near Nigeria)",
+    country_code: null,
+  },
+  {
+    name: "Hollywood",
+    screenshot: "https://overfast-api.tekrop.fr/static/maps/hollywood.jpg",
+    gamemodes: ["hybrid"],
+    location: "Los Angeles, United States",
+    country_code: "US",
+  },
+  {
+    name: "Eichenwalde",
+    screenshot: "https://overfast-api.tekrop.fr/static/maps/eichenwalde.jpg",
+    gamemodes: ["hybrid"],
+    location: "Stuttgart, Germany",
+    country_code: "DE",
+  },
+  {
+    name: "King’s Row",
+    screenshot: "https://overfast-api.tekrop.fr/static/maps/kings_row.jpg",
+    gamemodes: ["hybrid"],
+    location: "London, United Kingdom",
+    country_code: "UK",
+  },
+  {
+    name: "Midtown",
+    screenshot: "https://overfast-api.tekrop.fr/static/maps/midtown.jpg",
+    gamemodes: ["hybrid"],
+    location: "New York, United States",
+    country_code: "US",
+  },
+  {
+    name: "Paraíso",
+    screenshot: "https://overfast-api.tekrop.fr/static/maps/paraiso.jpg",
+    gamemodes: ["hybrid"],
+    location: "Rio de Janeiro, Brazil",
+    country_code: "BR",
+  },
+];

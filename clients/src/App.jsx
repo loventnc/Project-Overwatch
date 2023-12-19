@@ -13,7 +13,8 @@ import HeroesTank from './HeroesTank'
 import HeroesDamage from './HeroesDamage'
 import HeroesSupport from './HeroesSupport'
 import Character from './character'
-
+import MapAssault from './MapsAssault'
+import MapsCapture  from './MapsCapture'
 
 import {Routes, Route} from 'react-router-dom'
 import Followus from './Components/Followus'
@@ -36,6 +37,8 @@ function App() {
         <Route path='/HeroesDamage' element={<HeroesDamage />} />
         <Route path='/heroesSupport' element={<HeroesSupport />} />
         <Route path='/Heroes/:name' element={<Character />} />
+        <Route path='/MapsAssault' element={<MapAssault />} />
+        <Route path='/MapsCapture' element={<MapsCapture />} />
       </Routes>
       <Followus />
     </>
