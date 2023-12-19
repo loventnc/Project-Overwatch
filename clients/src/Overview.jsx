@@ -37,13 +37,13 @@ const Overview = () => {
       <div className="grid grid-cols-2">
         <div className="mt-28">
           <h1 className="ml-36 ">
-          <span className="text- text-[50px] font-bold " >OVERWATCH 2 WIKI </span>
-          <span className="text-[18px] "> <br></br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Overwatch 2 is a free-to-play, team-based action game set in the optimistic future, where every match is the ultimate 5v5 battlefield brawl. Play as a time-jumping freedom fighter, a beat-dropping battlefield DJ, or one of over 30 other unique heroes as you battle it out around the globe. Enjoy high-octane conflict with a fresh lineup of heroes, more maps to explore, and 5v5 combat that gives every player game-changing power.</span>
+          <span className="text- text-[50px] font-bold text-white" >OVERWATCH 2 WIKI </span>
+          <span className="text-[18px] text-white"> <br></br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Overwatch 2 is a free-to-play, team-based action game set in the optimistic future, where every match is the ultimate 5v5 battlefield brawl. Play as a time-jumping freedom fighter, a beat-dropping battlefield DJ, or one of over 30 other unique heroes as you battle it out around the globe. Enjoy high-octane conflict with a fresh lineup of heroes, more maps to explore, and 5v5 combat that gives every player game-changing power.</span>
           </h1>
           <p className="italic font-bold text-center bg-[#FF9737] h-[31px] w-[200px] rounded-md text-white mt-10 ml-28 hover:bg-[#ff7a37] hover:rounded-md p-1">  JOIN OUR COMMUNITY</p>
         </div>
         <div className="mt-20">
-          <img src={HeadHero} className="hover:scale-110 transition duration-50" alt="" width="800px" />
+          <img src={HeadHero} className="" alt="" width="800px" />
         </div>
       </div>
     </div>
@@ -51,8 +51,8 @@ const Overview = () => {
 
     {/* Heroes/Map */}
     <div className=' bg-[#DDF2FD] grid grid-cols-2 '>
-      <div className='hover:scale-110 transition duration-50 hover:shadow-2xl'><img src={HeoresMenu} className="" alt=""  /></div>
-      <div className='hover:scale-110 transition duration-50 hover:shadow-2xl'><img src={MapMenu} className="" alt=""  /></div>
+      <div className='hover:scale-105 transition duration-20 hover:shadow-2xl'><img src={HeoresMenu} className="" alt=""  /></div>
+      <div className='hover:scale-105 transition duration-20 hover:shadow-2xl'><img src={MapMenu} className="" alt=""  /></div>
     </div>
 
     {/* GAME MODES */}
@@ -64,66 +64,86 @@ const Overview = () => {
 
       {/* icons */}
       <div className='flex flex-row justify-center gap-10 pt-5'>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src="https://overfast-api.tekrop.fr/static/gamemodes/assault-icon.svg" className="bg-neutral-300 rounded-full w-[40px]"  alt=""  />
+        <Link to = "/MapsAssault">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src="https://overfast-api.tekrop.fr/static/gamemodes/assault-icon.svg" className="bg-neutral-300 rounded-full w-[40px]"  alt=""  />
+            </div>
+            <span className=''>Assault</span>
           </div>
-          <span className=''>Assault</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={CaptureFlag} className="bg-neutral-300 rounded-full" alt="" />
+        </Link>
+        <Link to = "/MapsCapture">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={CaptureFlag} className="bg-neutral-300 rounded-full" alt="" />
+            </div>
+            <span className=''>CaptureFlag</span>
           </div>
-          <span className=''>CaptureFlag</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={Control} className="bg-neutral-300 rounded-full" alt=""  />
+        </Link>
+        <Link to = "/MapsControl">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={Control} className="bg-neutral-300 rounded-full" alt=""  />
+            </div>
+            <span>Control</span>
           </div>
-          <span>Control</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={Deathmatch} className="bg-neutral-300 rounded-full" alt="" />
+        </Link>
+        <Link to = "/MapsDeathmatch">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={Deathmatch} className="bg-neutral-300 rounded-full" alt="" />
+            </div>
+            <span>Deathmatch</span>
           </div>
-          <span>Deathmatch</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={Elimination} className="bg-neutral-300 rounded-full" alt="" />
+        </Link>
+        <Link to = "/MapsElimination">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={Elimination} className="bg-neutral-300 rounded-full" alt="" />
+            </div>
+            <span>Elimination</span>
           </div>
-          <span>Elimination</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={Escort} className="bg-neutral-300 rounded-full" alt="" />
+        </Link>
+        <Link to = "/MapsEscort">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={Escort} className="bg-neutral-300 rounded-full" alt="" />
+            </div>
+            <span>Escort</span>
           </div>
-          <span>Escort</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={Flashpoint} className="bg-neutral-300 rounded-full" alt="" />
+        </Link>
+        <Link to = "/MapsFlashpoint">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={Flashpoint} className="bg-neutral-300 rounded-full" alt="" />
+            </div>
+            <span>Flashpoint</span>
           </div>
-          <span>Flashpoint</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={Hybrid} className="bg-neutral-300 rounded-full" alt="" />
+        </Link>
+        <Link to = "/MapsHybrid">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={Hybrid} className="bg-neutral-300 rounded-full" alt="" />
+            </div>
+            <span>Hybridg</span>
           </div>
-          <span>Hybridg</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={Push} className="bg-neutral-300 rounded-full" alt="" />
-          </div>  
-          <span>Push</span>
-        </div>
-        <div className='flex flex-col justify-center' width="50px">
-          <div className='flex justify-center'>
-            <img src={TeamDeathMatch} className="bg-neutral-300 rounded-full" alt="" />
+        </Link>
+        <Link to = "/MapsPush">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={Push} className="bg-neutral-300 rounded-full" alt="" />
+            </div>  
+            <span>Push</span>
           </div>
-          <span>TeamDeathMatch</span>
-        </div>
+        </Link>
+        <Link to = "/MapsTeamDeathMatch">
+          <div className='flex flex-col justify-center' width="50px">
+            <div className='flex justify-center'>
+              <img src={TeamDeathMatch} className="bg-neutral-300 rounded-full" alt="" />
+            </div>
+            <span>TeamDeathMatch</span>
+          </div>
+        </Link>
       </div>
     {/* pictures */}
     {/* <div className='flex justify-center mt-10' >
