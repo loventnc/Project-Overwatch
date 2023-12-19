@@ -37,19 +37,14 @@ export default function LoginPage() {
                 <form onSubmit={login} className='block'>
                 <label className="form-control w-full max-w-xs">
                     <div className="label">
-                        <span className="label-text">USERNAME</span>
+                        <span className="label-text" onChange={ev => setUsername(ev.target.value)}>USERNAME</span>
                     </div>
                     <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
                 </label>
                 <label className="form-control w-full max-w-xs">
                     <div className="label">
-                        <span className="label-text">PASSWORD</span>
+                        <span className="label-text" onChange={ev => setPassword(ev.target.value)}>PASSWORD</span>
                     </div>
-                    <input type="password" 
-                    placeholder="Type here" 
-                    value={password} 
-                    onChange={ev => setPassword(ev.target.value)}
-                    className='input input-bordered w-full max-w-xs'/>
                 </label>
 
                 
