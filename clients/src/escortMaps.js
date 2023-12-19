@@ -1,0 +1,58 @@
+export const escortMaps = [
+  {
+    name: "Circuit Royal",
+    screenshot: "https://overfast-api.tekrop.fr/static/maps/circuit_royal.jpg",
+    gamemodes: ["escort"],
+    location: "Monte Carlo, Monaco",
+    country_code: "MC",
+  },
+  {
+    name: "Dorado",
+    screenshot: "https://overfast-api.tekrop.fr/static/maps/dorado.jpg",
+    gamemodes: ["escort"],
+    location: "Mexico",
+    country_code: "MX",
+  },
+  {
+    name: "Route 66",
+    screenshot: "https://overfast-api.tekrop.fr/static/maps/route_66.jpg",
+    gamemodes: ["escort"],
+    location: "Albuquerque, New Mexico, United States",
+    country_code: "US",
+  },
+  {
+    name: "Junkertown",
+    screenshot: "https://overfast-api.tekrop.fr/static/maps/junkertown.jpg",
+    gamemodes: ["escort"],
+    location: "Central Australia",
+    country_code: "AU",
+  },
+  {
+    name: "Rialto",
+    screenshot: "https://overfast-api.tekrop.fr/static/maps/rialto.jpg",
+    gamemodes: ["escort"],
+    location: "Venice, Italy",
+    country_code: "IT",
+  },
+  {
+    name: "Havana",
+    screenshot: "https://overfast-api.tekrop.fr/static/maps/havana.jpg",
+    gamemodes: ["escort"],
+    location: "Havana, Cuba",
+    country_code: "CU",
+  },
+  {
+    name: "Watchpoint: Gibraltar",
+    screenshot: "https://overfast-api.tekrop.fr/static/maps/gibraltar.jpg",
+    gamemodes: ["escort"],
+    location: "Gibraltar",
+    country_code: "GI",
+  },
+  {
+    name: "Shambali Monastery",
+    screenshot: "https://overfast-api.tekrop.fr/static/maps/shambali.jpg",
+    gamemodes: ["escort"],
+    location: "Nepal",
+    country_code: "NP",
+  },
+];

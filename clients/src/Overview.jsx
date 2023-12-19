@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import HeadHero from "../src/image/HeadHero.png";
 import BgOverviews from "../src/image/BgOverviews.jpg";
+import Assault from "../src/image/Assault.jpg";
 import CaptureFlag from "../src/image/CaptureFlag.png";
 import Control from "../src/image/Control.png";
 import Deathmatch from "../src/image/Deathmatch.png";
@@ -31,7 +32,7 @@ const Overview = () => {
   return (
     <>
     {/* Hearder */}
-    <div className="bg-cover bg-center bg-BgOverviews backdrop-blur-sm bg-white/30 h-[660px]">
+    <div className="bg-cover bg-center bg-BgOverviews backdrop-blur-md bg-white bg-opacity-30 h-[660px]">
       <div className="grid grid-cols-2">
         <div className="mt-28">
           <h1 className="ml-36 ">
@@ -62,6 +63,12 @@ const Overview = () => {
 
       {/* icons */}
       <div className='flex flex-row justify-center gap-10 pt-5'>
+        <div className='flex flex-col justify-center' width="50px">
+          <div className='flex justify-center'>
+            <img src="https://overfast-api.tekrop.fr/static/gamemodes/assault-icon.svg" className="bg-neutral-300 rounded-full w-[40px]"  alt=""  />
+          </div>
+          <span className=''>Assault</span>
+        </div>
         <div className='flex flex-col justify-center' width="50px">
           <div className='flex justify-center'>
             <img src={CaptureFlag} className="bg-neutral-300 rounded-full" alt="" />
@@ -137,7 +144,7 @@ const Overview = () => {
         <div id="slide1" className="carousel-item relative w-full">
           <img src={CaptureFlagPIC} className="mx-auto" width="700px" />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide9" className="btn btn-circle">❮</a> 
+            <a href="#slide10" className="btn btn-circle">❮</a> 
             <a href="#slide2" className="btn btn-circle">❯</a>
           </div>
         </div> 
@@ -194,6 +201,13 @@ const Overview = () => {
         <img src={TeamDeathMatchPIC} className="mx-auto" width="700px"/>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide8" className="btn btn-circle">❮</a> 
+            <a href="#slide10" className="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide10" className="carousel-item relative w-full">
+        <img src={Assault} className="mx-auto" width="700px"/>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide9" className="btn btn-circle">❮</a> 
             <a href="#slide1" className="btn btn-circle">❯</a>
           </div>
         </div>
