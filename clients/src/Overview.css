@@ -36,3 +36,54 @@
         opacity: 100%;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .Rest {
+        width: 80%;
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container img {
+        margin: 20px;
+    }
+
+    .container .text {
+        margin: 20px;
+    }
+
+    .parking1 {
+        top: 720px;
+        left: 975px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .Rest {
+        width: 80%;
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container img {
+        margin: 20px;
+    }
+
+    .container .text {
+        margin: 20px;
+    }
+
+    .parking1 {
+        top: 720px;
+        left: 975px;
+    }
+}
