@@ -126,9 +126,9 @@ export default function Navbar(){
 
                 {username && (
                             <>
-                                <span className="badge badge-primary badge-outline mt-4">Hello, {username}!</span>
+                                <span className="badge badge-outline mt-4 text-[#405275]">Hello, {username}!</span>
                                 <Link to ="/community/create" className="btn btn-outline btn-info">Create new post</Link>
-                                <a onClick={logout} className="text-blue-500 hover:underline mt-3">Logout</a>
+                                <a onClick={logout} className="text-[#405275] hover:underline mt-3">Logout</a>
                             </>
                 )}
                 {!username && (

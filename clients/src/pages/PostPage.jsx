@@ -71,7 +71,7 @@ export default function PostPage(){
 
         //     </div>
         // </div>
-        <div className="flex flex-col items-center w-screen p-6 mt-10 bg-[#DDF2FD]">
+        <div className="flex flex-col items-center w-screen p-6 bg-[#DDF2FD]">
             <div className='text-5xl font-bold mb-4'>
                 {postInfo.title}
             </div>
