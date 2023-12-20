@@ -133,9 +133,9 @@ export default function Navbar(){
                 )}
                 {!username && (
                     <div className="dropdown dropdown-hover">
-                        <div className="flex flex-row">
-                            <label tabIndex={0} className="p-1">Account</label>
-                            <p className="pt-3.5 ml-1 text-xs"><AiOutlineDown/></p>
+                        <div className="flex flex-row mt-1">
+                            <label tabIndex={0} className="p-1 ">Account</label>
+                            <p className="pt-3.5 ml-1 text-xs "><AiOutlineDown/></p>
                         </div>
                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-box w-52">
                             <li className="bg-[#99ccff] rounded-md text-white text-center"><NavLink to="/community/login">Log in</NavLink></li>

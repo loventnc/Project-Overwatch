@@ -51,10 +51,12 @@ const MapDetails = () => {
                             <div className="bg-[#DDF2FD] ">
                                 <div className="flex flex-col justify-center items-center">
                                     <h2 className=" text-[50px] font-bold ">{detailMap.name}</h2>
-                                    <h3 className="text-[22px] ">Gamemodes : {detailMap.gamemodes}</h3>
-                                    <h4 className="text-[22px] ">Location : {detailMap.location}</h4>
-                                    <h5 className="text-[22px] ">Country : {detailMap.country_code}</h5>
-                                    <img src = {detailMap.screenshot} className="pt-5"></img>
+                                    <div className="flex flex-col">
+                                        <h3 className="text-[22px] ">Gamemodes : {detailMap.gamemodes}</h3>
+                                        <h4 className="text-[22px] ">Location : {detailMap.location}</h4>
+                                        <h5 className="text-[22px] ">Country : {detailMap.country_code}</h5>
+                                    </div>
+                                    <img src = {detailMap.screenshot} className="pt-5" width="850px"></img>
                                 </div>
                             </div>
                         </>
