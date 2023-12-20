@@ -106,13 +106,6 @@ export default function Navbar(){
                                 <li>
                                     <NavLink to ="/MapsTeamDeathMatch">TeamDeathMatch</NavLink>
                                 </li>
-                                {/* {MapsDropdown .map((MapDropdown, index) => {
-                                    return(
-                                        <>
-                                        <li >{MapDropdown.title}</li>
-                                        </>
-                                    )
-                                })} */}
                             </ul>
                         </div>
                         <div className="dropdown dropdown-hover">
@@ -152,10 +145,6 @@ export default function Navbar(){
                         </ul>
                     </div>
                 )}
-
-
-
-
 
                     
                     <li className="btn btn-warning bg-">

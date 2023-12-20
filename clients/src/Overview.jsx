@@ -67,11 +67,6 @@ const Overview = () => {
 </div>
 
 
-
-
-
-
-
     {/* GAME MODES */}
     <div className='bg-BGGM bg-cover w-screen'>
       <div className=" pt-10">

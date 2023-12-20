@@ -5,6 +5,8 @@ import { GiAbdominalArmor } from "react-icons/gi"
 import { IoShieldSharp } from "react-icons/io5";
 import { GiHealthNormal } from "react-icons/gi";
 import { MdOutlineSummarize } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
+import { BiSolidUserRectangle } from "react-icons/bi";
 
 const Character = () => {
     const [data, setData] = useState(null);
@@ -36,29 +38,37 @@ const Character = () => {
                         {/* Content01 */}
                         {data && (
                             <div className="flex flex-row bg-cover bg-center h-screen" style={{ backgroundImage: 'url(https://blizzardwatch.com/wp-content/uploads/2018/10/cg-8a.jpg)' }}>
-                                <div className="ml-32 pt-10">
+                                <div className="ml-32 pt-10 ">
                                     <h1 className="text-white text-[50px] font-bold ">{data.name}</h1>
-                                    <p className="text-white text-[20px] w-6/12 mt-3 font-semibold">{data.description}</p>
-                                    <div className="flex flex-col justify-start">
-                                        <p className="text-white text-[20px] mt-5 font-semibold">Role: {data.role}</p>
-                                        <p className="text-white text-[20px] mt-5 font-semibold">Location: {data.location}</p>
+                                    <div className="flex flex-row gap-3">
+                                        <p className="text-white text-[20px] w-6/12 mt-3 font-semibold">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{data.description}</p>
+                                    </div>
+                                    <div className="flex flex-col justify-start gap-3">
+                                        <div className="flex flex-row gap-3">
+                                            <BiSolidUserRectangle className="text-white text-[30px] mt-5" />
+                                            <p className="text-white text-[20px] mt-5 font-semibold">Role: {data.role}</p>
+                                        </div>
+                                        <div className="flex flex-row gap-3">
+                                            <FaLocationDot className="text-white text-[30px] mt-2" />
+                                            <p className="text-white text-[20px] mt-2 font-semibold">Location: {data.location}</p>
+                                        </div>
                                         <div className="">
                                             <h2 className="text-white text-[20px] font-semibold mt-5">Hitpoints</h2>
                                             <div className="flex flex-row items-center">
-                                                <GiAbdominalArmor className="text-white text-[40px] m-5" />
-                                                <p className="text-white text-[20px] m-5">Armor : {data.hitpoints.armor}</p>
+                                                <GiAbdominalArmor className="text-white text-[30px] m-3" />
+                                                <p className="text-white text-[20px] m-3">Armor : {data.hitpoints.armor}</p>
                                             </div>
                                             <div className="flex flex-row items-center">
-                                                <IoShieldSharp className="text-white text-[40px] m-5" />
-                                                <p className="text-white text-[20px] m-5">Shields : {data.hitpoints.shields}</p>
+                                                <IoShieldSharp className="text-white text-[30px] m-3" />
+                                                <p className="text-white text-[20px] m-3">Shields : {data.hitpoints.shields}</p>
                                             </div>
                                             <div className="flex items-center">
-                                                <GiHealthNormal className="text-white text-[40px] m-5" />
-                                                <p className="text-white text-[20px] m-5">Health : {data.hitpoints.health}</p>
+                                                <GiHealthNormal className="text-white text-[30px] m-3" />
+                                                <p className="text-white text-[20px] m-3">Health : {data.hitpoints.health}</p>
                                             </div>
                                             <div className="flex items-center">
-                                                <MdOutlineSummarize className="text-white text-[40px] m-5" />
-                                                <p className="text-white text-[20px] m-5">Total : {data.hitpoints.total}</p>
+                                                <MdOutlineSummarize className="text-white text-[30px] m-3" />
+                                                <p className="text-white text-[20px] m-3">Total : {data.hitpoints.total}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -85,7 +95,7 @@ const Character = () => {
                                     </div>
                                     <p className="text-lg font-semibold mb-2">{ability.name}</p>
                                     <div className="mb-3">
-                                    <p className="text-md bg-white rounded-md p-2">{ability.description}</p>
+                                    <p className="text-md bg-white rounded-md p-2">&nbsp; &nbsp;&nbsp;{ability.description}</p>
                                     </div>
                                     {/* Uncomment the line below if you have a video thumbnail */}
                                     {/* <img src={ability.video.thumbnail} alt="Video Thumbnail" /> */}
@@ -139,7 +149,7 @@ const Character = () => {
                         </div>
                         <div className="bg-[#DDF2FD]">
                             <div className="flex justify-center py-5 ">
-                                <h1 className="bg-[#D9D9D9] px-40 text-4xl py-4">Overviews</h1>
+                                <h1 className="bg-[#D9D9D9] px-40 text-4xl py-4 font-semibold">Overviews</h1>
                             </div>
                             <div className="flex justify-center gap-5 py-5">
                                 {data.story.chapters.map((chapter, index) => {
