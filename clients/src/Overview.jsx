@@ -31,7 +31,7 @@ const Overview = () => {
   return (
     <>
       {/* Hearder */}
-      <div className="bg-cover bg-center bg-BgOverviews backdrop-blur-md bg-white bg-opacity-30 h-[660px]">
+      <div className="bg-cover bg-center bg-BgOverviews backdrop-blur-md bg-white bg-opacity-30 h-[660px] w-full">
         <div className="grid grid-cols-2">
           <div className="mt-28">
             <h1 className="ml-36 ">
@@ -52,7 +52,9 @@ const Overview = () => {
             </h1>
             <p className="italic font-size text-lg font-bold text-center bg-[#d17826] h-[31px] w-[250px] rounded-md text-white mt-10 ml-28 btn glass">
               {" "}
+              <NavLink to="/community">
               JOIN OUR COMMUNITY
+              </NavLink>
             </p>
           </div>
           <div class="Hero">
@@ -355,6 +357,15 @@ const Overview = () => {
             <Community_OW />
           </div>
         </div>
+        
+      </div>
+      <div className="flex justify-end items-start  h-14 bg-gray-300 ">
+          <p className="italic font-size text-lg font-bold text-center bg-[#d17826] h-[31px] w-[250px] mr-9 mb-4 rounded-md text-white  btn glass flex jusitfy-">
+                {" "}
+                <NavLink to="/community">
+                  SEE MORE 
+                </NavLink>
+          </p>
       </div>
     </>
   );

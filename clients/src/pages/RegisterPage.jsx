@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import { NavLink } from 'react-router-dom';
 export default function RegisterPage() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -57,14 +57,16 @@ export default function RegisterPage() {
 
             <label className="mb-4 block">
                 <span className="text-gray-700 font-semibold">PASSWORD</span>
-                <input
-                type="password"
-                placeholder="Type here"
-                className="input input-bordered w-full mt-1"
-                onChange={(ev) => setPassword(ev.target.value)}
-                />
+                
+                    <input
+                    type="password"
+                    placeholder="Type here"
+                    className="input input-bordered w-full mt-1"
+                    onChange={(ev) => setPassword(ev.target.value)}
+                    />
+                
             </label>
-
+           
             <button type="submit" className="btn btn-primary w-full mt-6">
                 Register
             </button>

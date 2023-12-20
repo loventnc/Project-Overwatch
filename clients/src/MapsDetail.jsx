@@ -39,7 +39,7 @@ const MapDetails = () => {
     console.log(detail.replaceAll("-", " "));
 
     return (
-        <>
+        <div className="h-screen bg-[#DDF2FD]">
             {loading ? (
                 <div>(<div className="flex justify-items-center justify-center h-screen"><span className="loading loading-bars loading-xs "></span>
                 <span className="loading loading-bars loading-sm"></span>
@@ -71,7 +71,7 @@ const MapDetails = () => {
                     )}
                 </div>
             )}
-        </>
+        </div>
     );
 };
 
