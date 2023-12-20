@@ -58,6 +58,7 @@ const Overview = () => {
   <div className='relative group'>
   <Link to = "Heroes">
     <img src={HeoresMenu} className="w-full filter grayscale-50 transition-all duration-300" alt="" />
+
       <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-bold bg-black bg-opacity-50 p-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 hover:opacity-100'>Heroes</div>
     </Link>
   </div>
