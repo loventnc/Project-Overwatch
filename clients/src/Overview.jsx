@@ -55,7 +55,7 @@ const Overview = () => {
 {/* Heroes/Map */}
 <div className='bg-[#DDF2FD] grid grid-cols-2 w-screen'>
   <div className='relative group'>
-    <img src={HeoresMenu} className="w-full filter grayscale-50 transition-all duration-300" alt="" />
+    <img src={HeoresMenu} className="w-full filter grayscale-50 transition-all duration-300 " alt="" />
     <Link to = "Heroes">
       <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-bold bg-black bg-opacity-50 p-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 hover:opacity-100'>Heroes</div>
     </Link>
