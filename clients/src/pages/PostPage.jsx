@@ -86,7 +86,7 @@ export default function PostPage(){
                     <Link to={`/community/edit/${postInfo._id}`}>
                     <button className='btn btn-success'>Edit this post</button>
                     </Link>
-                    <button onClick={handleDelete} className='btn btn-warning'>Delete this post</button>
+                    <button onClick={handleDelete} className='btn btn-warning btn-outline'>Delete this post</button>
                 </>
                 )}
             </div>
