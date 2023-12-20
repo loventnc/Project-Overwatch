@@ -22,9 +22,10 @@ import FlashpointPIC from "../src/image/FlashpointPIC.jpg";
 import HybridPIC from "../src/image/HybridPIC.jpg";
 import PushPIC from "../src/image/PushPIC.jpg";
 import TeamDeathMatchPIC from "../src/image/TeamDeathMatchPIC.jpg";
-import Community_OW from "./Community_OW"
+import Community_OW from "./Community_OW";
 import { SlArrowLeft } from "react-icons/sl";
 import './Overview.css'
+import { NavLink } from "react-router-dom";
 
 
 
@@ -41,7 +42,7 @@ const Overview = () => {
           <span className="text- text-[50px] font-bold text-white" >OVERWATCH 2 WIKI </span>
           <span className="text-[18px] text-white"> <br></br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Overwatch 2 is a free-to-play, team-based action game set in the optimistic future, where every match is the ultimate 5v5 battlefield brawl. Play as a time-jumping freedom fighter, a beat-dropping battlefield DJ, or one of over 30 other unique heroes as you battle it out around the globe. Enjoy high-octane conflict with a fresh lineup of heroes, more maps to explore, and 5v5 combat that gives every player game-changing power.</span>
           </h1>
-          <p className="italic font-size text-lg font-bold text-center bg-[#d17826] h-[31px] w-[250px] rounded-md text-white mt-10 ml-28 btn glass">  JOIN OUR COMMUNITY</p>
+          <p className="italic font-size text-lg font-bold text-center bg-[#d17826] h-[31px] w-[250px] rounded-md text-white mt-10 ml-28 btn glass"> <NavLink to="/community"> JOIN OUR COMMUNITY </NavLink></p>
         </div>
         <div class= "Hero">
           <div className="mt-12">

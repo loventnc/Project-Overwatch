@@ -148,7 +148,7 @@ export default function Navbar(){
 
                     
                     <li className="btn btn-warning">
-                    <NavLink to='https://download.battle.net/en-us?product=ow&blzcmp=ow_gamesite' target="blank">Play Now</NavLink>
+                    <NavLink to='https://download.battle.net/en-us?' target="blank">Play Now</NavLink>
                     </li>
                     </ul>
             </div>
