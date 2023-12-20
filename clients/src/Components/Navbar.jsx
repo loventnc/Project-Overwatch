@@ -126,7 +126,7 @@ export default function Navbar(){
 
                 {username && (
                             <>
-                                <span className="badge badge-primary badge-outline mt-3">Hello, {username}!</span>
+                                <span className="badge badge-primary badge-outline mt-4">Hello, {username}!</span>
                                 <Link to ="/community/create" className="btn btn-outline btn-info">Create new post</Link>
                                 <a onClick={logout} className="text-blue-500 hover:underline mt-3">Logout</a>
                             </>
@@ -147,7 +147,7 @@ export default function Navbar(){
                 )}
 
                     
-                    <li className="btn btn-warning bg-">
+                    <li className="btn btn-warning">
                     <NavLink to='https://download.battle.net/en-us?product=ow&blzcmp=ow_gamesite' target="blank">Play Now</NavLink>
                     </li>
                     </ul>
