@@ -43,8 +43,10 @@ const Overview = () => {
           </h1>
           <p className="italic font-size text-lg font-bold text-center bg-[#d17826] h-[31px] w-[250px] rounded-md text-white mt-10 ml-28 btn glass">  JOIN OUR COMMUNITY</p>
         </div>
-        <div className="mt-20">
-          <img src={HeadHero} className="" alt="" width="800px" />
+        <div class= "Hero">
+          <div className="mt-20">
+            <img src={HeadHero} className="" alt="" width="800px" />
+          </div>
         </div>
       </div>
     </div>
